@@ -23,6 +23,7 @@ public class Application {
         System.out.println("Hello Liff "+ Version.getVersion()+"!");
 
         window.init();
+        renderframe.init();
         loop();
 
         // Free the window callbacks and destroy the window
@@ -41,12 +42,9 @@ public class Application {
 
         while(!glfwWindowShouldClose(window.getWindowReference())){
             glfwPollEvents();
-
-            glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
+            glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
             glClear(GL_COLOR_BUFFER_BIT);
-
             if(dt>0) render(dt);
-
             glfwSwapBuffers(window.getWindowReference());
 
             endTime = Time.getTime();
