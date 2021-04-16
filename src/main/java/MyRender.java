@@ -1,4 +1,7 @@
 import Liff.Renderable;
+import Liff.Renderer.Camera;
+import Liff.Renderer.Shader;
+import org.joml.Vector2f;
 import org.lwjgl.BufferUtils;
 
 import java.nio.FloatBuffer;
@@ -10,32 +13,15 @@ import static org.lwjgl.opengl.GL30.glGenVertexArrays;
 
 public class MyRender implements Renderable {
 
-    private String vertexShaderSrc = "#version 330 core\n" +
-            "layout(location = 0)in vec3 aPos;\n" +
-            "layout(location = 1)in vec4 aColor;\n" +
-            "\n" +
-            "out vec4 fColor;\n" +
-            "\n" +
-            "void main(){\n" +
-            "    fColor = aColor;\n" +
-            "    gl_Position = vec4(aPos, 1.0);\n" +
-            "}";
-    private String fragmentShaderSrc = "#version 330 core\n" +
-            "in vec4 fColor;\n" +
-            "out vec4 color;\n" +
-            "\n" +
-            "void main(){\n" +
-            "    color = fColor;\n" +
-            "}";
-
-    private int vertexID, fragmentID, shaderID;
     private int vaoID, vboID, eboID;
+    private Shader shader;
+    private Camera camera;
 
     private float[] vertexArray = {
-             0.5f, -0.5f,   0.0f,              1.0f, 0.0f, 0.0f, 1.0f,
-            -0.5f,   0.5f,   0.0f,              1.0f, 0.0f, 0.0f, 1.0f,
-             0.5f,   0.5f,   0.0f,              1.0f, 0.0f, 0.0f, 1.0f,
-            -0.5f,  -0.5f,   0.0f,              1.0f, 0.0f, 0.0f, 1.0f,
+             100.5f,  0.0f,   0.0f,              1.0f, 0.0f, 0.0f, 1.0f,
+             0.0f,   100.0f,   0.0f,              1.0f, 0.0f, 0.0f, 1.0f,
+             100.0f,   100.0f,   0.0f,              1.0f, 0.0f, 0.0f, 1.0f,
+             0.0f,  0.0f,   0.0f,              1.0f, 0.0f, 0.0f, 1.0f,
 
     };
     private int[] elementArray = {
@@ -45,44 +31,10 @@ public class MyRender implements Renderable {
 
     @Override
     public void init() {
-        vertexID = glCreateShader(GL_VERTEX_SHADER);
-        glShaderSource(vertexID, vertexShaderSrc);
-        glCompileShader(vertexID);
 
-        int success = glGetShaderi(vertexID, GL_COMPILE_STATUS);
-        if(success == GL_FALSE){
-            int len = glGetShaderi(vertexID, GL_INFO_LOG_LENGTH);
-            System.out.println("ERROR: compilation in vertex shader.");
-            System.out.println(glGetShaderInfoLog(vertexID, len));
-            assert false : "";
-        }
-
-        fragmentID = glCreateShader(GL_FRAGMENT_SHADER);
-        glShaderSource(fragmentID, fragmentShaderSrc);
-        glCompileShader(fragmentID);
-
-        success = glGetShaderi(fragmentID, GL_COMPILE_STATUS);
-        if(success == GL_FALSE){
-            int len = glGetShaderi(fragmentID, GL_INFO_LOG_LENGTH);
-            System.out.println("ERROR: compilation in fragment shader.");
-            System.out.println(glGetShaderInfoLog(fragmentID, len));
-            assert false : "";
-        }
-
-        shaderID = glCreateProgram();
-        glAttachShader(shaderID, vertexID);
-        glAttachShader(shaderID, fragmentID);
-        glLinkProgram(shaderID);
-
-        success = glGetProgrami(shaderID, GL_LINK_STATUS);
-        if(success == GL_FALSE){
-            int len = glGetProgrami(shaderID, GL_INFO_LOG_LENGTH);
-            System.out.println("ERROR: compilation in linking shader.");
-            System.out.println(glGetProgramInfoLog(shaderID, len));
-            assert false : "";
-
-        }
-
+        shader = new Shader("src/main/resources/shaders/default.glsl");
+        camera = new Camera(new Vector2f());
+        shader.compile();
         vaoID = glGenVertexArrays();
         glBindVertexArray(vaoID);
 
@@ -114,7 +66,10 @@ public class MyRender implements Renderable {
     @Override
     public void render(float dt) {
         //System.out.println(1/dt);
-        glUseProgram(shaderID);
+        camera.position.x -= .05/dt;
+        shader.bind();
+        shader.uploadMatrix4f("uProjection", camera.getProjection());
+        shader.uploadMatrix4f("uView", camera.getView());
         glBindVertexArray(vaoID);
 
         glDrawElements(GL_TRIANGLES, elementArray.length, GL_UNSIGNED_INT, 0);
