@@ -1,6 +1,4 @@
 import Liff.Application;
-import Liff.Renderable;
-import Liff.Renderer.Shader;
 
 public class Main {
 

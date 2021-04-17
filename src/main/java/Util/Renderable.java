@@ -1,4 +1,4 @@
-package Liff;
+package Util;
 
 public interface Renderable {
     void init();
