@@ -10,10 +10,12 @@ Liff/Renderable.java
  Liff.Renderable
 Liff/Application.java
  Liff.Application
-Liff/Renderer/Shader.java
- Liff.Renderer.Shader
+Liff/Renderer/Texture.java
+ Liff.Renderer.Texture
 Liff/Renderer/Camera.java
  Liff.Renderer.Camera
+Liff/Renderer/Shader.java
+ Liff.Renderer.Shader
 MyRender.java
  MyRender
 Main.java
