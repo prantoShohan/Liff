@@ -1,10 +1,7 @@
-import Liff.Components.TestComponent;
-import Liff.Entities.Entity;
-import Liff.Renderer.Texture;
-import Util.Renderable;
+import Liff.Renderable;
 import Liff.Renderer.Camera;
 import Liff.Renderer.Shader;
-
+import Liff.Renderer.Texture;
 import org.joml.Vector2f;
 import org.lwjgl.BufferUtils;
 
@@ -21,7 +18,6 @@ public class MyRender implements Renderable {
     private Shader shader;
     private Camera camera;
     private Texture texture;
-    private Entity test;
 
     private float[] vertexArray = {
              100.5f,   0.0f,     0.0f,              1.0f, 0.0f, 0.0f, 1.0f,         1, 1,
@@ -43,9 +39,6 @@ public class MyRender implements Renderable {
         shader.compile();
         this.texture = new Texture("src/main/resources/textures/logo.png");
 
-        test = new Entity("Test");
-        test.addComponent(new TestComponent());
-        test.init();
 
 
         vaoID = glGenVertexArrays();
@@ -97,7 +90,7 @@ public class MyRender implements Renderable {
 
         glDrawElements(GL_TRIANGLES, elementArray.length, GL_UNSIGNED_INT, 0);
 
-        test.update(dt);
+
 
     }
 }

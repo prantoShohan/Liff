@@ -1,6 +1,5 @@
 package Liff;
 
-import Util.Renderable;
 import Util.Time;
 import org.lwjgl.Version;
 
