@@ -5,7 +5,7 @@ package qiwi;
  */
 public class UnknownConstraintException extends KiwiException {
 
-    public UnknownConstraintException(Constraint constraint){
+    public UnknownConstraintException(qConstraint qConstraint){
 
     }
 }

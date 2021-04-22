@@ -44,7 +44,7 @@ public class DrawCall {
             for(int i: d.shape.getIndices()){
                 indexBufferList.add(i+currentIndex);
             }
-            currentIndex = Collections.max(indexBufferList);
+            currentIndex = Collections.max(indexBufferList)+1;
         }
         vertexBuffer = BufferUtils.createFloatBuffer(vertexBufferList.size());
         indexBuffer = BufferUtils.createIntBuffer(indexBufferList.size());

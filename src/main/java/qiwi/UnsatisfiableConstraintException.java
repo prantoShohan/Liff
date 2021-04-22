@@ -5,9 +5,9 @@ package qiwi;
  */
 public class UnsatisfiableConstraintException extends KiwiException {
 
-    private Constraint constraint;
-    public UnsatisfiableConstraintException(Constraint constraint) {
-        super(constraint.toString());
-        this.constraint = constraint;
+    private qConstraint qConstraint;
+    public UnsatisfiableConstraintException(qConstraint qConstraint) {
+        super(qConstraint.toString());
+        this.qConstraint = qConstraint;
     }
 }

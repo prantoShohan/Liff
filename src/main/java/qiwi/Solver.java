@@ -20,17 +20,17 @@ public class Solver {
 
     private static class EditInfo {
         Tag tag;
-        Constraint constraint;
+        qConstraint qConstraint;
         double constant;
 
-        public EditInfo(Constraint constraint, Tag tag, double constant){
-            this.constraint = constraint;
+        public EditInfo(qConstraint qConstraint, Tag tag, double constant){
+            this.qConstraint = qConstraint;
             this.tag = tag;
             this.constant = constant;
         }
     }
 
-    private Map<Constraint, Tag> cns = new LinkedHashMap<Constraint, Tag>();
+    private Map<qConstraint, Tag> cns = new LinkedHashMap<qConstraint, Tag>();
     private Map<Symbol, Row> rows = new LinkedHashMap<Symbol, Row>();
     private Map<Variable, Symbol> vars = new LinkedHashMap<Variable, Symbol>();
     private Map<Variable, EditInfo> edits = new LinkedHashMap<Variable, EditInfo>();
@@ -42,23 +42,23 @@ public class Solver {
     /**
      * Add a constraint to the solver.
      *
-     * @param constraint
+     * @param qConstraint
      * @throws DuplicateConstraintException The given constraint has already been added to the solver.
      * @throws UnsatisfiableConstraintException      The given constraint is required and cannot be satisfied.
      */
-    public void addConstraint(Constraint constraint) throws DuplicateConstraintException, UnsatisfiableConstraintException {
+    public void addConstraint(qConstraint qConstraint) throws DuplicateConstraintException, UnsatisfiableConstraintException {
 
-        if (cns.containsKey(constraint)) {
-            throw new DuplicateConstraintException(constraint);
+        if (cns.containsKey(qConstraint)) {
+            throw new DuplicateConstraintException(qConstraint);
         }
 
         Tag tag = new Tag();
-        Row row = createRow(constraint, tag);
+        Row row = createRow(qConstraint, tag);
         Symbol subject = chooseSubject(row, tag);
 
         if(subject.getType() == Symbol.Type.INVALID && allDummies(row)){
             if (!Util.nearZero(row.getConstant())) {
-                throw new UnsatisfiableConstraintException(constraint);
+                throw new UnsatisfiableConstraintException(qConstraint);
             } else {
                 subject = tag.marker;
             }
@@ -66,7 +66,7 @@ public class Solver {
 
         if (subject.getType() == Symbol.Type.INVALID) {
             if (!addWithArtificialVariable(row)) {
-                throw new UnsatisfiableConstraintException(constraint);
+                throw new UnsatisfiableConstraintException(qConstraint);
             }
         } else {
             row.solveFor(subject);
@@ -74,19 +74,19 @@ public class Solver {
             this.rows.put(subject, row);
         }
 
-        this.cns.put(constraint, tag);
+        this.cns.put(qConstraint, tag);
 
         optimize(objective);
     }
 
-    public void removeConstraint(Constraint constraint) throws UnknownConstraintException, InternalSolverError{
-        Tag tag = cns.get(constraint);
+    public void removeConstraint(qConstraint qConstraint) throws UnknownConstraintException, InternalSolverError{
+        Tag tag = cns.get(qConstraint);
         if(tag == null){
-            throw new UnknownConstraintException(constraint);
+            throw new UnknownConstraintException(qConstraint);
         }
 
-        cns.remove(constraint);
-        removeConstraintEffects(constraint, tag);
+        cns.remove(qConstraint);
+        removeConstraintEffects(qConstraint, tag);
 
         Row row = rows.get(tag.marker);
         if(row != null){
@@ -119,12 +119,12 @@ public class Solver {
         optimize(objective);
     }
 
-    void removeConstraintEffects(Constraint constraint, Tag tag){
+    void removeConstraintEffects(qConstraint qConstraint, Tag tag){
         if(tag.marker.getType() == Symbol.Type.ERROR){
-            removeMarkerEffects(tag.marker, constraint.getStrength());
+            removeMarkerEffects(tag.marker, qConstraint.getStrength());
         }
         else if(tag.other.getType() == Symbol.Type.ERROR){
-            removeMarkerEffects(tag.other, constraint.getStrength());
+            removeMarkerEffects(tag.other, qConstraint.getStrength());
         }
     }
 
@@ -180,8 +180,8 @@ public class Solver {
         return third;
     }
 
-    public boolean hasConstraint(Constraint constraint){
-        return cns.containsKey(constraint);
+    public boolean hasConstraint(qConstraint qConstraint){
+        return cns.containsKey(qConstraint);
     }
 
     public void addEditVariable(Variable variable, double strength) throws DuplicateEditVariableException, RequiredFailureException{
@@ -197,10 +197,10 @@ public class Solver {
 
         List<Term> terms = new ArrayList<>();
         terms.add(new Term(variable));
-        Constraint constraint = new Constraint(new Expression(terms), RelationalOperator.OP_EQ, strength);
+        qConstraint qConstraint = new qConstraint(new Expression(terms), RelationalOperator.OP_EQ, strength);
 
         try {
-            addConstraint(constraint);
+            addConstraint(qConstraint);
         } catch (DuplicateConstraintException e) {
             e.printStackTrace();
         } catch (UnsatisfiableConstraintException e) {
@@ -208,7 +208,7 @@ public class Solver {
         }
 
 
-        EditInfo info = new EditInfo(constraint, cns.get(constraint), 0.0);
+        EditInfo info = new EditInfo(qConstraint, cns.get(qConstraint), 0.0);
         edits.put(variable, info);
     }
 
@@ -219,7 +219,7 @@ public class Solver {
         }
 
         try {
-            removeConstraint(edit.constraint);
+            removeConstraint(edit.qConstraint);
         } catch (UnknownConstraintException e) {
             e.printStackTrace();
         }
@@ -304,8 +304,8 @@ public class Solver {
      * The tag will be updated with the marker and error symbols to use
      * for tracking the movement of the constraint in the tableau.
      */
-    Row createRow(Constraint constraint, Tag tag) {
-        Expression expression = constraint.getExpression();
+    Row createRow(qConstraint qConstraint, Tag tag) {
+        Expression expression = qConstraint.getExpression();
         Row row = new Row(expression.getConstant());
 
         for (Term term : expression.getTerms()) {
@@ -322,31 +322,31 @@ public class Solver {
             }
         }
 
-        switch (constraint.getOp()) {
+        switch (qConstraint.getOp()) {
             case OP_LE:
             case OP_GE: {
-                double coeff = constraint.getOp() == RelationalOperator.OP_LE ? 1.0 : -1.0;
+                double coeff = qConstraint.getOp() == RelationalOperator.OP_LE ? 1.0 : -1.0;
                 Symbol slack = new Symbol(Symbol.Type.SLACK);
                 tag.marker = slack;
                 row.insert(slack, coeff);
-                if (constraint.getStrength() < Strength.REQUIRED) {
+                if (qConstraint.getStrength() < Strength.REQUIRED) {
                     Symbol error = new Symbol(Symbol.Type.ERROR);
                     tag.other = error;
                     row.insert(error, -coeff);
-                    this.objective.insert(error, constraint.getStrength());
+                    this.objective.insert(error, qConstraint.getStrength());
                 }
                 break;
             }
             case OP_EQ: {
-                if (constraint.getStrength() < Strength.REQUIRED) {
+                if (qConstraint.getStrength() < Strength.REQUIRED) {
                     Symbol errplus = new Symbol(Symbol.Type.ERROR);
                     Symbol errminus = new Symbol(Symbol.Type.ERROR);
                     tag.marker = errplus;
                     tag.other = errminus;
                     row.insert(errplus, -1.0); // v = eplus - eminus
                     row.insert(errminus, 1.0); // v - eplus + eminus = 0
-                    this.objective.insert(errplus, constraint.getStrength());
-                    this.objective.insert(errminus, constraint.getStrength());
+                    this.objective.insert(errplus, qConstraint.getStrength());
+                    this.objective.insert(errminus, qConstraint.getStrength());
                 } else {
                     Symbol dummy = new Symbol(Symbol.Type.DUMMY);
                     tag.marker = dummy;

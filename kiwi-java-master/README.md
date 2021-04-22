@@ -1,10 +1,10 @@
 # kiwi-java
 [![Build Status](https://travis-ci.org/alexbirkett/kiwi-java.svg?branch=master)](https://travis-ci.org/alexbirkett/kiwi-java)
 
-A Java port of the [Kiwi C++](https://github.com/nucleic/kiwi) implementation of the Cassowary constraint solving algorithm
+A Java port of the [Kiwi C++](https://github.com/nucleic/kiwi) implementation of the Cassowary qConstraint solving algorithm
 
 ## Background
-This project was created by porting [Kiwi](https://github.com/nucleic/kiwi) line for line to Java. The objective is to create a faster Java implementation of the Cassowary constraint solving algorithm.
+This project was created by porting [Kiwi](https://github.com/nucleic/kiwi) line for line to Java. The objective is to create a faster Java implementation of the Cassowary qConstraint solving algorithm.
 
 ## History
 

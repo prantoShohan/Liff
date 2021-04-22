@@ -232,192 +232,192 @@ public class Symbolics {
     }
 
     // Expression relations
-    public static Constraint equals(Expression first, Expression second) {
-        return new Constraint(subtract(first, second), RelationalOperator.OP_EQ);
+    public static qConstraint equals(Expression first, Expression second) {
+        return new qConstraint(subtract(first, second), RelationalOperator.OP_EQ);
     }
 
-    public static Constraint equals(Expression expression, Term term) {
+    public static qConstraint equals(Expression expression, Term term) {
         return equals(expression, new Expression(term));
     }
 
-    public static Constraint equals(Expression expression, Variable variable) {
+    public static qConstraint equals(Expression expression, Variable variable) {
         return equals(expression, new Term(variable));
     }
 
-    public static Constraint equals(Expression expression, double constant) {
+    public static qConstraint equals(Expression expression, double constant) {
         return equals(expression, new Expression(constant));
     }
 
-    public static Constraint lessThanOrEqualTo(Expression first, Expression second) {
-        return new Constraint(subtract(first, second), RelationalOperator.OP_LE);
+    public static qConstraint lessThanOrEqualTo(Expression first, Expression second) {
+        return new qConstraint(subtract(first, second), RelationalOperator.OP_LE);
     }
 
-    public static Constraint lessThanOrEqualTo(Expression expression, Term term) {
+    public static qConstraint lessThanOrEqualTo(Expression expression, Term term) {
         return lessThanOrEqualTo(expression, new Expression(term));
     }
 
-    public static Constraint lessThanOrEqualTo(Expression expression, Variable variable) {
+    public static qConstraint lessThanOrEqualTo(Expression expression, Variable variable) {
         return lessThanOrEqualTo(expression, new Term(variable));
     }
 
-    public static Constraint lessThanOrEqualTo(Expression expression, double constant) {
+    public static qConstraint lessThanOrEqualTo(Expression expression, double constant) {
         return lessThanOrEqualTo(expression, new Expression(constant));
     }
 
-    public static Constraint greaterThanOrEqualTo(Expression first, Expression second) {
-        return new Constraint(subtract(first, second), RelationalOperator.OP_GE);
+    public static qConstraint greaterThanOrEqualTo(Expression first, Expression second) {
+        return new qConstraint(subtract(first, second), RelationalOperator.OP_GE);
     }
 
-    public static Constraint greaterThanOrEqualTo(Expression expression, Term term) {
+    public static qConstraint greaterThanOrEqualTo(Expression expression, Term term) {
         return greaterThanOrEqualTo(expression, new Expression(term));
     }
 
-    public static Constraint greaterThanOrEqualTo(Expression expression, Variable variable) {
+    public static qConstraint greaterThanOrEqualTo(Expression expression, Variable variable) {
         return greaterThanOrEqualTo(expression, new Term(variable));
     }
 
-    public static Constraint greaterThanOrEqualTo(Expression expression, double constant) {
+    public static qConstraint greaterThanOrEqualTo(Expression expression, double constant) {
         return greaterThanOrEqualTo(expression, new Expression(constant));
     }
 
     // Term relations
-    public static Constraint equals(Term term, Expression expression) {
+    public static qConstraint equals(Term term, Expression expression) {
         return equals(expression, term);
     }
 
-    public static Constraint equals(Term first, Term second) {
+    public static qConstraint equals(Term first, Term second) {
         return equals(new Expression(first), second);
     }
 
-    public static Constraint equals(Term term, Variable variable) {
+    public static qConstraint equals(Term term, Variable variable) {
         return equals(new Expression(term), variable);
     }
 
-    public static Constraint equals(Term term, double constant) {
+    public static qConstraint equals(Term term, double constant) {
         return equals(new Expression(term), constant);
     }
 
-    public static Constraint lessThanOrEqualTo(Term term, Expression expression) {
+    public static qConstraint lessThanOrEqualTo(Term term, Expression expression) {
         return lessThanOrEqualTo(new Expression(term), expression);
     }
 
-    public static Constraint lessThanOrEqualTo(Term first, Term second) {
+    public static qConstraint lessThanOrEqualTo(Term first, Term second) {
         return lessThanOrEqualTo(new Expression(first), second);
     }
 
-    public static Constraint lessThanOrEqualTo(Term term, Variable variable) {
+    public static qConstraint lessThanOrEqualTo(Term term, Variable variable) {
         return lessThanOrEqualTo(new Expression(term), variable);
     }
 
-    public static Constraint lessThanOrEqualTo(Term term, double constant) {
+    public static qConstraint lessThanOrEqualTo(Term term, double constant) {
         return lessThanOrEqualTo(new Expression(term), constant);
     }
 
-    public static Constraint greaterThanOrEqualTo(Term term, Expression expression) {
+    public static qConstraint greaterThanOrEqualTo(Term term, Expression expression) {
         return greaterThanOrEqualTo(new Expression(term), expression);
     }
 
-    public static Constraint greaterThanOrEqualTo(Term first, Term second) {
+    public static qConstraint greaterThanOrEqualTo(Term first, Term second) {
         return greaterThanOrEqualTo(new Expression(first), second);
     }
 
-    public static Constraint greaterThanOrEqualTo(Term term, Variable variable) {
+    public static qConstraint greaterThanOrEqualTo(Term term, Variable variable) {
         return greaterThanOrEqualTo(new Expression(term), variable);
     }
 
-    public static Constraint greaterThanOrEqualTo(Term term, double constant) {
+    public static qConstraint greaterThanOrEqualTo(Term term, double constant) {
         return greaterThanOrEqualTo(new Expression(term), constant);
     }
 
     // Variable relations
-    public static Constraint equals(Variable variable, Expression expression) {
+    public static qConstraint equals(Variable variable, Expression expression) {
         return equals(expression, variable);
     }
 
-    public static Constraint equals(Variable variable, Term term) {
+    public static qConstraint equals(Variable variable, Term term) {
         return equals(term, variable);
     }
 
-    public static Constraint equals(Variable first, Variable second) {
+    public static qConstraint equals(Variable first, Variable second) {
         return equals(new Term(first), second);
     }
 
-    public static Constraint equals(Variable variable, double constant) {
+    public static qConstraint equals(Variable variable, double constant) {
         return equals(new Term(variable), constant);
     }
 
-    public static Constraint lessThanOrEqualTo(Variable variable, Expression expression) {
+    public static qConstraint lessThanOrEqualTo(Variable variable, Expression expression) {
         return lessThanOrEqualTo(new Term(variable), expression);
     }
 
-    public static Constraint lessThanOrEqualTo(Variable variable, Term term) {
+    public static qConstraint lessThanOrEqualTo(Variable variable, Term term) {
         return lessThanOrEqualTo(new Term(variable), term);
     }
 
-    public static Constraint lessThanOrEqualTo(Variable first, Variable second) {
+    public static qConstraint lessThanOrEqualTo(Variable first, Variable second) {
         return lessThanOrEqualTo(new Term(first), second);
     }
 
-    public static Constraint lessThanOrEqualTo(Variable variable, double constant) {
+    public static qConstraint lessThanOrEqualTo(Variable variable, double constant) {
         return lessThanOrEqualTo(new Term(variable), constant);
     }
 
-    public static Constraint greaterThanOrEqualTo(Variable variable, Expression expression) {
+    public static qConstraint greaterThanOrEqualTo(Variable variable, Expression expression) {
         return greaterThanOrEqualTo(new Term(variable), expression);
     }
 
-    public static Constraint greaterThanOrEqualTo(Variable variable, Term term) {
+    public static qConstraint greaterThanOrEqualTo(Variable variable, Term term) {
         return greaterThanOrEqualTo(term, variable);
     }
 
-    public static Constraint greaterThanOrEqualTo(Variable first, Variable second) {
+    public static qConstraint greaterThanOrEqualTo(Variable first, Variable second) {
         return greaterThanOrEqualTo(new Term(first), second);
     }
 
-    public static Constraint greaterThanOrEqualTo(Variable variable, double constant) {
+    public static qConstraint greaterThanOrEqualTo(Variable variable, double constant) {
         return greaterThanOrEqualTo(new Term(variable), constant);
     }
 
     // Double relations
-    public static Constraint equals(double constant, Expression expression) {
+    public static qConstraint equals(double constant, Expression expression) {
         return equals(expression, constant);
     }
 
-    public static Constraint equals(double constant, Term term) {
+    public static qConstraint equals(double constant, Term term) {
         return equals(term, constant);
     }
 
-    public static Constraint equals(double constant, Variable variable) {
+    public static qConstraint equals(double constant, Variable variable) {
         return equals(variable, constant);
     }
 
-    public static Constraint lessThanOrEqualTo(double constant, Expression expression) {
+    public static qConstraint lessThanOrEqualTo(double constant, Expression expression) {
         return lessThanOrEqualTo(new Expression(constant), expression);
     }
 
-    public static Constraint lessThanOrEqualTo(double constant, Term term) {
+    public static qConstraint lessThanOrEqualTo(double constant, Term term) {
         return lessThanOrEqualTo(constant, new Expression(term));
     }
 
-    public static Constraint lessThanOrEqualTo(double constant, Variable variable) {
+    public static qConstraint lessThanOrEqualTo(double constant, Variable variable) {
         return lessThanOrEqualTo(constant, new Term(variable));
     }
 
-    public static Constraint greaterThanOrEqualTo(double constant, Term term) {
+    public static qConstraint greaterThanOrEqualTo(double constant, Term term) {
         return greaterThanOrEqualTo(new Expression(constant), term);
     }
 
-    public static Constraint greaterThanOrEqualTo(double constant, Variable variable) {
+    public static qConstraint greaterThanOrEqualTo(double constant, Variable variable) {
         return greaterThanOrEqualTo(constant, new Term(variable));
     }
 
     // Constraint strength modifier
-    public static Constraint modifyStrength(Constraint constraint, double strength) {
-        return new Constraint(constraint, strength);
+    public static qConstraint modifyStrength(qConstraint qConstraint, double strength) {
+        return new qConstraint(qConstraint, strength);
     }
 
-    public static Constraint modifyStrength(double strength, Constraint constraint) {
-        return modifyStrength(strength, constraint);
+    public static qConstraint modifyStrength(double strength, qConstraint qConstraint) {
+        return modifyStrength(strength, qConstraint);
     }
 
 }

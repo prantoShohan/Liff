@@ -5,9 +5,9 @@ package qiwi;
  */
 public class DuplicateConstraintException extends KiwiException {
 
-    private Constraint constraint;
+    private qConstraint qConstraint;
 
-    public DuplicateConstraintException(Constraint constraint) {
-        this.constraint = constraint;
+    public DuplicateConstraintException(qConstraint qConstraint) {
+        this.qConstraint = qConstraint;
     }
 }

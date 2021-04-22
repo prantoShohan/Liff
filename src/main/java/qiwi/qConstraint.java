@@ -5,26 +5,26 @@ import java.util.*;
 /**
  * Created by alex on 30/01/15.
  */
-public class Constraint {
+public class qConstraint {
 
     private Expression expression;
     private double strength;
     private RelationalOperator op;
 
-    public Constraint(){
+    public qConstraint(){
     }
 
-    public Constraint(Expression expr, RelationalOperator op) {
+    public qConstraint(Expression expr, RelationalOperator op) {
         this(expr, op, Strength.REQUIRED);
     }
 
-    public Constraint(Expression expr, RelationalOperator op, double strength) {
+    public qConstraint(Expression expr, RelationalOperator op, double strength) {
         this.expression = reduce(expr);
         this.op = op;
         this.strength = Strength.clip(strength);
     }
 
-    public Constraint(Constraint other, double strength) {
+    public qConstraint(qConstraint other, double strength) {
         this(other.expression, other.op, strength);
     }
 
@@ -60,7 +60,7 @@ public class Constraint {
         return strength;
     }
 
-    public Constraint setStrength(double strength) {
+    public qConstraint setStrength(double strength) {
         this.strength = strength;
         return this;
     }
