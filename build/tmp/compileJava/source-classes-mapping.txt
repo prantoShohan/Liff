@@ -1,36 +1,88 @@
-Liff/Renderer/Shape.java
- Liff.Renderer.Shape
-Liff/MouseListener.java
- Liff.MouseListener
+qiwi/Expression.java
+ qiwi.Expression
+MyRender.java
+ MyRender
+qiwi/UnknownConstraintException.java
+ qiwi.UnknownConstraintException
+Liff/Renderer/DrawCall.java
+ Liff.Renderer.DrawCall
 Liff/Renderer/Vertex.java
  Liff.Renderer.Vertex
 Liff/Application.java
  Liff.Application
-Liff/Renderer/DrawCallManager.java
- Liff.Renderer.DrawCallManager
-Liff/Renderer/Camera.java
- Liff.Renderer.Camera
 Liff/Renderable.java
  Liff.Renderable
+qiwi/Solver.java
+ qiwi.Solver
+ qiwi.Solver$1
+ qiwi.Solver$EditInfo
+ qiwi.Solver$Tag
+qiwi/Strength.java
+ qiwi.Strength
+qiwi/DuplicateConstraintException.java
+ qiwi.DuplicateConstraintException
 Liff/Renderer/Texture.java
  Liff.Renderer.Texture
-Liff/Window.java
- Liff.Window
-Util/Time.java
- Util.Time
-Liff/KeyListener.java
- Liff.KeyListener
+qiwi/KiwiException.java
+ qiwi.KiwiException
+qiwi/NonlinearExpressionException.java
+ qiwi.NonlinearExpressionException
 Liff/Renderer/DrawData.java
  Liff.Renderer.DrawData
-Liff/Renderer/DrawCall.java
- Liff.Renderer.DrawCall
 Liff/Renderer/Shader.java
  Liff.Renderer.Shader
-Liff/Renderer/VertexArray.java
- Liff.Renderer.VertexArray
 Liff/Renderer/Renderer.java
  Liff.Renderer.Renderer
-MyRender.java
- MyRender
+qiwi/Symbol.java
+ qiwi.Symbol
+ qiwi.Symbol$Type
 Main.java
  Main
+qiwi/Term.java
+ qiwi.Term
+qiwi/RequiredFailureException.java
+ qiwi.RequiredFailureException
+Liff/Shapes/Shape.java
+ Liff.Shapes.Shape
+qiwi/RelationalOperator.java
+ qiwi.RelationalOperator
+Util/Time.java
+ Util.Time
+Liff/Views/FrameLayout.java
+ Liff.Views.FrameLayout
+qiwi/UnknownEditVariableException.java
+ qiwi.UnknownEditVariableException
+Liff/Window.java
+ Liff.Window
+Liff/Views/View.java
+ Liff.Views.View
+Liff/MouseListener.java
+ Liff.MouseListener
+qiwi/Symbolics.java
+ qiwi.Symbolics
+Liff/Shapes/Rectangle.java
+ Liff.Shapes.Rectangle
+qiwi/UnsatisfiableConstraintException.java
+ qiwi.UnsatisfiableConstraintException
+Liff/Renderer/Camera.java
+ Liff.Renderer.Camera
+qiwi/Row.java
+ qiwi.Row
+qiwi/InternalSolverError.java
+ qiwi.InternalSolverError
+qiwi/Constraint.java
+ qiwi.Constraint
+Liff/KeyListener.java
+ Liff.KeyListener
+Liff/Renderer/VertexArray.java
+ Liff.Renderer.VertexArray
+Liff/Views/ViewGroup.java
+ Liff.Views.ViewGroup
+Liff/Views/Coordinate.java
+ Liff.Views.Coordinate
+qiwi/Variable.java
+ qiwi.Variable
+qiwi/Util.java
+ qiwi.Util
+qiwi/DuplicateEditVariableException.java
+ qiwi.DuplicateEditVariableException

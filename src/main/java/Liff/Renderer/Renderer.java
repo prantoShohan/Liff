@@ -1,5 +1,7 @@
 package Liff.Renderer;
 
+import Liff.Shapes.Shape;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -66,6 +66,7 @@ public class DrawCall {
         shader.bind(camera);
         drawcall();
         shader.unbind();
+        vao.destroy();
     }
 
     public boolean isSameAs(DrawData d){

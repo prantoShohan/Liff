@@ -1,5 +1,6 @@
 package Liff;
 
+import Liff.Renderer.Renderer;
 import Util.Time;
 import org.lwjgl.Version;
 
@@ -21,6 +22,8 @@ public class Application {
     }
     public void run(){
         System.out.println("Hello Liff "+ Version.getVersion()+"!");
+
+        Renderer.get();
 
         window.init();
         renderframe.init();
