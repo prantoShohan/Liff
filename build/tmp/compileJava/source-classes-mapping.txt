@@ -4,8 +4,8 @@ qiwi/DuplicateEditVariableException.java
  qiwi.DuplicateEditVariableException
 qiwi/UnknownConstraintException.java
  qiwi.UnknownConstraintException
-Main.java
- Main
+Liff/Renderer/DrawCall.java
+ Liff.Renderer.DrawCall
 Liff/Renderer/Vertex.java
  Liff.Renderer.Vertex
 Liff/Application.java
@@ -35,8 +35,8 @@ Liff/Views/Constraint.java
  Liff.Views.Constraint
 Liff/Renderer/Shader.java
  Liff.Renderer.Shader
-MyRender.java
- MyRender
+Liff/Renderer/Renderer.java
+ Liff.Renderer.Renderer
 qiwi/Symbol.java
  qiwi.Symbol
  qiwi.Symbol$Type
@@ -89,7 +89,7 @@ qiwi/Variable.java
  qiwi.Variable
 Liff/Views/Bound.java
  Liff.Views.Bound
-Liff/Renderer/DrawCall.java
- Liff.Renderer.DrawCall
-Liff/Renderer/Renderer.java
- Liff.Renderer.Renderer
+MyRender.java
+ MyRender
+Main.java
+ Main

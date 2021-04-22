@@ -23,4 +23,27 @@ public class LayoutParameter {
     private Constraint centerConstraintX;
     private Constraint centerConstraintY;
 
+    public void setLeftConstraint(Constraint leftConstraint) {
+        this.leftConstraint = leftConstraint;
+    }
+
+    public void setRightConstraint(Constraint rightConstraint) {
+        this.rightConstraint = rightConstraint;
+    }
+
+    public void setTopConstraint(Constraint topConstraint) {
+        this.topConstraint = topConstraint;
+    }
+
+    public void setBottomConstraint(Constraint bottomConstraint) {
+        this.bottomConstraint = bottomConstraint;
+    }
+
+    public void setCenterConstraintX(Constraint centerConstraintX) {
+        this.centerConstraintX = centerConstraintX;
+    }
+
+    public void setCenterConstraintY(Constraint centerConstraintY) {
+        this.centerConstraintY = centerConstraintY;
+    }
 }
