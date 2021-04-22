@@ -1,15 +1,8 @@
 import Liff.Renderable;
 import Liff.Renderer.*;
 import Liff.Shapes.Rectangle;
-import Liff.Shapes.Shape;
-import Liff.Views.View;
 import org.joml.Vector2f;
 import org.joml.Vector4f;
-import qiwi.Solver;
-
-
-import java.util.Arrays;
-import java.util.List;
 
 
 public class MyRender implements Renderable {
