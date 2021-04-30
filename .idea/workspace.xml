@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1496db42-fcdb-42a1-83fc-ba87ea5729ec" name="Default Changelist" comment="Starting again without constraintlayout making basic linear layout">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/FrameLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Layout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/LayoutGravity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/LayoutParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/ViewPosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/ViewSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/BottomConstraintOf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/Constraint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/ConstraintLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/ConstraintWidget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/Experiment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/FixedSizeConstraint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/FreeSizeConstraint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/LeftConstraintOf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/RightConstraintOf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/SizeConstraint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/TopConstraintOf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Liff.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/KeyListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/KeyListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/MouseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/MouseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderable.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Camera.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Camera.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/DrawCall.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/DrawCall.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/DrawData.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/DrawData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Renderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Renderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Shader.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Shader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Texture.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Texture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Vertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Vertex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/VertexArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/VertexArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Shapes/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Shapes/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Shapes/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Shapes/Shape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Window.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyRender.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/MyRender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Util/Time.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Util/Time.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/DuplicateConstraintException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/DuplicateConstraintException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/DuplicateEditVariableException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/DuplicateEditVariableException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Expression.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Expression.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/InternalSolverError.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/InternalSolverError.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/KiwiException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/KiwiException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/NonlinearExpressionException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/NonlinearExpressionException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/RelationalOperator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/RelationalOperator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/RequiredFailureException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/RequiredFailureException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Row.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Row.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Solver$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Solver$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Solver$EditInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Solver$EditInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Solver$Tag.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Solver$Tag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Solver.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Solver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Strength.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Strength.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Symbol$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Symbol$Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Symbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Symbol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Symbolics.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Symbolics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Term.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Term.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/UnknownConstraintException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/UnknownConstraintException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/UnknownEditVariableException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/UnknownEditVariableException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/UnsatisfiableConstraintException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/UnsatisfiableConstraintException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Variable.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Variable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/qConstraint.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/qConstraint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/local.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/src/test/java/no/birkett/kiwi/Benchmarks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/src/test/java/no/birkett/kiwi/ConstraintParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/src/test/java/no/birkett/kiwi/RealWorldTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/src/test/java/no/birkett/kiwi/Tests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/src/test/java/no/birkett/kiwi/inequality/ConstantVariableTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/src/test/java/no/birkett/kiwi/inequality/ExpressionVariableTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/src/test/java/no/birkett/kiwi/inequality/VariableConstantTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/src/test/java/no/birkett/kiwi/inequality/VariableExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kiwi-java-master/src/test/java/no/birkett/kiwi/inequality/VariableVariableTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyRender.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/kiwi-java-master">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Liff" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1rElHZoLdBdwgMCjNDuCbXo1yuY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/kiwi-java-master" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.21108179" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="inlay.hints.JAVA" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\Liff\src\main\resources" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="Liff.Views.experiment" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Liff.Views.experiment" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Liff.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="kiwi-java-master" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="kiwi-java-master" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1496db42-fcdb-42a1-83fc-ba87ea5729ec" name="Default Changelist" comment="" />
+      <created>1618549046360</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618549046360</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Basic Application structure with empty window from GLFW, Input system implemented">
+      <created>1618578276518</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1618578276518</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Rendered basic rectangle with manual shader and vao">
+      <created>1618586685806</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1618586685806</updated>
+    </task>
+    <task id="LOCAL-00003" summary="createed basic camera">
+      <created>1618603675885</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1618603675886</updated>
+    </task>
+    <task id="LOCAL-00004" summary="created basic texture class">
+      <created>1618643749701</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1618643749701</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Created basic entity and component classes">
+      <created>1618662268916</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1618662268917</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Revert &quot;Created basic entity and component classes&quot;&#10;&#10;This reverts commit b4864ca6">
+      <created>1618674777751</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1618674777751</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Created basic batch renderer but have to use dynamic allocation on vertex buffer">
+      <created>1619028725658</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1619028725658</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added qiwi library for solving constraint equation">
+      <created>1619090869249</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1619090869250</updated>
+    </task>
+    <task id="LOCAL-00009" summary="working on constraintlayout but fixed renderer indexbuffer problem">
+      <created>1619093224067</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1619093224067</updated>
+    </task>
+    <task id="LOCAL-00010" summary="halfassing Constraint layout">
+      <created>1619095364526</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1619095364526</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Starting again without constraintlayout making basic linear layout">
+      <created>1619095499820</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1619095499820</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Basic Application structure with empty window from GLFW, Input system implemented" />
+    <MESSAGE value="Rendered basic rectangle with manual shader and vao" />
+    <MESSAGE value="createed basic camera" />
+    <MESSAGE value="created basic texture class" />
+    <MESSAGE value="Created basic entity and component classes" />
+    <MESSAGE value="Revert &quot;Created basic entity and component classes&quot;&#10;&#10;This reverts commit b4864ca6" />
+    <MESSAGE value="Created basic batch renderer but have to use dynamic allocation on vertex buffer" />
+    <MESSAGE value="Added qiwi library for solving constraint equation" />
+    <MESSAGE value="working on constraintlayout but fixed renderer indexbuffer problem" />
+    <MESSAGE value="halfassing Constraint layout" />
+    <MESSAGE value="Starting again without constraintlayout making basic linear layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting again without constraintlayout making basic linear layout" />
+  </component>
+</project>

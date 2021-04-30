@@ -1,7 +1,7 @@
 qiwi/Expression.java
  qiwi.Expression
-qiwi/DuplicateEditVariableException.java
- qiwi.DuplicateEditVariableException
+MyRender.java
+ MyRender
 qiwi/UnknownConstraintException.java
  qiwi.UnknownConstraintException
 Liff/Renderer/DrawCall.java
@@ -31,8 +31,6 @@ qiwi/NonlinearExpressionException.java
  qiwi.NonlinearExpressionException
 Liff/Renderer/DrawData.java
  Liff.Renderer.DrawData
-Liff/Renderer/VertexArray.java
- Liff.Renderer.VertexArray
 Liff/Renderer/Shader.java
  Liff.Renderer.Shader
 Liff/Renderer/Renderer.java
@@ -40,8 +38,8 @@ Liff/Renderer/Renderer.java
 qiwi/Symbol.java
  qiwi.Symbol
  qiwi.Symbol$Type
-qiwi/Util.java
- qiwi.Util
+qiwi/DuplicateEditVariableException.java
+ qiwi.DuplicateEditVariableException
 qiwi/Term.java
  qiwi.Term
 qiwi/RequiredFailureException.java
@@ -52,10 +50,10 @@ qiwi/RelationalOperator.java
  qiwi.RelationalOperator
 Util/Time.java
  Util.Time
+Liff/Renderer/VertexArray.java
+ Liff.Renderer.VertexArray
 qiwi/UnknownEditVariableException.java
  qiwi.UnknownEditVariableException
-Liff/KeyListener.java
- Liff.KeyListener
 Liff/Window.java
  Liff.Window
 qiwi/Variable.java
@@ -66,6 +64,8 @@ qiwi/Symbolics.java
  qiwi.Symbolics
 Liff/Shapes/Rectangle.java
  Liff.Shapes.Rectangle
+qiwi/Util.java
+ qiwi.Util
 qiwi/UnsatisfiableConstraintException.java
  qiwi.UnsatisfiableConstraintException
 Liff/Renderer/Camera.java
@@ -74,7 +74,46 @@ qiwi/Row.java
  qiwi.Row
 qiwi/InternalSolverError.java
  qiwi.InternalSolverError
-MyRender.java
- MyRender
+Liff/KeyListener.java
+ Liff.KeyListener
+Liff/Views/View.java
+ Liff.Views.View
+Liff/Views/Layout.java
+ Liff.Views.Layout
+Liff/Views/LayoutParameters.java
+ Liff.Views.LayoutParameters
+Liff/Views/ViewSize.java
+ Liff.Views.ViewSize
+ Liff.Views.ViewSize$Behaviour
+Liff/Views/ViewPosition.java
+ Liff.Views.ViewPosition
+Liff/Views/FrameLayout.java
+ Liff.Views.FrameLayout
+Liff/Views/LayoutGravity.java
+ Liff.Views.LayoutGravity
+Liff/Views/experiment/Experiment.java
+ Liff.Views.experiment.Experiment
+Liff/Views/experiment/FixedSizeConstraint.java
+ Liff.Views.experiment.FixedSizeConstraint
+Liff/Views/experiment/SizeConstraint.java
+ Liff.Views.experiment.SizeConstraint
+Liff/Views/experiment/ConstraintLayout.java
+ Liff.Views.experiment.ConstraintLayout
+Liff/Views/experiment/ConstraintWidget.java
+ Liff.Views.experiment.ConstraintWidget
+Liff/Views/experiment/Constraint.java
+ Liff.Views.experiment.Constraint
+Liff/Views/experiment/TopConstraintOf.java
+ Liff.Views.experiment.TopConstraintOf
+Liff/Views/experiment/LeftConstraintOf.java
+ Liff.Views.experiment.LeftConstraintOf
+Liff/Views/experiment/RightConstraintOf.java
+ Liff.Views.experiment.RightConstraintOf
+Liff/Views/experiment/BottomConstraintOf.java
+ Liff.Views.experiment.BottomConstraintOf
+Liff/Views/experiment/View.java
+ Liff.Views.experiment.View
+Liff/Views/experiment/FreeSizeConstraint.java
+ Liff.Views.experiment.FreeSizeConstraint
 Main.java
  Main

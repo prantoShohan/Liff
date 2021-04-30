@@ -1,4 +1,0 @@
-rootProject.name = 'kiwi-java'
-
-include 'lib'
-

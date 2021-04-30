@@ -19,13 +19,7 @@ public class MyRender implements Renderable {
         Vector4f color = new Vector4f(1.0f, 1.0f, 0.0f, 1.0f);
         Vector4f color1 = new Vector4f(1.0f, 0.0f, 0.3f, 1.0f);
         Vector4f color2 = new Vector4f(1.0f, 0.5f, 0.3f, 1.0f);
-//        Layout layout = new Layout();
-//        View a = new View();
-//        View b  = new View();
-//        layout.addChild(a);
-//        layout.addChild(b);
-//        a.setLeftConstraint(new LeftConstraint(layout));
-//        a.setRightConstraint(new RightConstraint(b));
+
 
 
         Renderer.submit(new Rectangle(100.0f, 100.0f, 200.0f, 200.0f, color), shader, camera);
