@@ -97,6 +97,8 @@ Liff/Views/experiment/FixedSizeConstraint.java
  Liff.Views.experiment.FixedSizeConstraint
 Liff/Views/experiment/SizeConstraint.java
  Liff.Views.experiment.SizeConstraint
+Liff/Views/experiment/FreeSizeConstraint.java
+ Liff.Views.experiment.FreeSizeConstraint
 Liff/Views/experiment/ConstraintLayout.java
  Liff.Views.experiment.ConstraintLayout
 Liff/Views/experiment/ConstraintWidget.java
@@ -113,7 +115,5 @@ Liff/Views/experiment/BottomConstraintOf.java
  Liff.Views.experiment.BottomConstraintOf
 Liff/Views/experiment/View.java
  Liff.Views.experiment.View
-Liff/Views/experiment/FreeSizeConstraint.java
- Liff.Views.experiment.FreeSizeConstraint
 Main.java
  Main

@@ -19,6 +19,7 @@ public class ConstraintWidget {
     public Variable vh;
 
     public float r = 0, l = 0, t = 0, b = 0, w = 0, h = 0;
+    public float mr = 16, ml = 16, mt = 16, mb = 16;
 
     public boolean centerHorizontal;
     public boolean leftAlign;
@@ -57,12 +58,12 @@ public class ConstraintWidget {
     }
 
     public void addEquation(Solver s) throws UnsatisfiableConstraintException, DuplicateConstraintException {
-        s.addConstraint(Symbolics.greaterThanOrEqualTo(this.vl, source.parent.constraintWidget.vl));
-        s.addConstraint(Symbolics.lessThanOrEqualTo(this.vr, source.parent.constraintWidget.vr));
+        s.addConstraint(Symbolics.greaterThanOrEqualTo(Symbolics.subtract(this.vl, ml), source.parent.constraintWidget.vl));
+        s.addConstraint(Symbolics.lessThanOrEqualTo(Symbolics.add(this.vr, mr), source.parent.constraintWidget.vr));
         if(horizontalSizeConstraint instanceof FreeSizeConstraint ){
             if(centerHorizontal){
-                s.addConstraint(Symbolics.equals(this.vl, leftConstraint.getTargetVariable()));
-                s.addConstraint(Symbolics.equals(this.vr, rightConstraint.getTargetVariable()));
+                s.addConstraint(Symbolics.equals(Symbolics.subtract(this.vl, ml), leftConstraint.getTargetVariable()));
+                s.addConstraint(Symbolics.equals(Symbolics.add(this.vr, mr), rightConstraint.getTargetVariable()));
             }else{
                 horizontalSizeConstraint = new FixedSizeConstraint(100);
             }
@@ -73,10 +74,10 @@ public class ConstraintWidget {
                 s.addConstraint(Symbolics.equals(this.vl, Symbolics.divide(Symbolics.subtract(Symbolics.add(leftConstraint.getTargetVariable(), rightConstraint.getTargetVariable()), this.vw), 2)));
                 s.addConstraint(Symbolics.equals(this.vr, Symbolics.add(this.vl, this.vw)));
             } else if (leftAlign) {
-                s.addConstraint(Symbolics.equals(this.vl, leftConstraint.getTargetVariable()));
+                s.addConstraint(Symbolics.equals(Symbolics.subtract(this.vl, ml), leftConstraint.getTargetVariable()));
                 s.addConstraint(Symbolics.equals(this.vr, Symbolics.add(this.vl, this.vw)));
             } else if (rightAlign) {
-                s.addConstraint(Symbolics.equals(this.vr, rightConstraint.getTargetVariable()));
+                s.addConstraint(Symbolics.equals(Symbolics.add(this.vr, mr), rightConstraint.getTargetVariable()));
                 s.addConstraint(Symbolics.equals(this.vl, Symbolics.subtract(this.vr, this.vw)));
             }
         }

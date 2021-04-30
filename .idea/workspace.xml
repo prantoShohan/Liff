@@ -4,103 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1496db42-fcdb-42a1-83fc-ba87ea5729ec" name="Default Changelist" comment="Starting again without constraintlayout making basic linear layout">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/FrameLayout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Layout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/LayoutGravity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/LayoutParameters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/View.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/ViewPosition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/ViewSize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/BottomConstraintOf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/Constraint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/ConstraintLayout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/ConstraintWidget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/Experiment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/FixedSizeConstraint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/FreeSizeConstraint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/LeftConstraintOf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/RightConstraintOf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/SizeConstraint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/TopConstraintOf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Liff.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/KeyListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/KeyListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/MouseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/MouseListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderable.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Camera.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Camera.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/DrawCall.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/DrawCall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/DrawData.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/DrawData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Renderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Renderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Shader.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Shader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Texture.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Texture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Vertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Vertex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/VertexArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/VertexArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Shapes/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Shapes/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Shapes/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Shapes/Shape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Window.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyRender.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/MyRender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Util/Time.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Util/Time.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/DuplicateConstraintException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/DuplicateConstraintException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/DuplicateEditVariableException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/DuplicateEditVariableException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Expression.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Expression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/InternalSolverError.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/InternalSolverError.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/KiwiException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/KiwiException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/NonlinearExpressionException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/NonlinearExpressionException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/RelationalOperator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/RelationalOperator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/RequiredFailureException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/RequiredFailureException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Row.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Row.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Solver$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Solver$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Solver$EditInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Solver$EditInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Solver$Tag.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Solver$Tag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Solver.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Solver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Strength.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Strength.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Symbol$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Symbol$Type.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Symbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Symbol.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Symbolics.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Symbolics.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Term.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Term.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/UnknownConstraintException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/UnknownConstraintException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/UnknownEditVariableException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/UnknownEditVariableException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/UnsatisfiableConstraintException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/UnsatisfiableConstraintException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/Variable.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/Variable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/qiwi/qConstraint.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/qiwi/qConstraint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/local.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/src/test/java/no/birkett/kiwi/Benchmarks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/src/test/java/no/birkett/kiwi/ConstraintParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/src/test/java/no/birkett/kiwi/RealWorldTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/src/test/java/no/birkett/kiwi/Tests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/src/test/java/no/birkett/kiwi/inequality/ConstantVariableTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/src/test/java/no/birkett/kiwi/inequality/ExpressionVariableTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/src/test/java/no/birkett/kiwi/inequality/VariableConstantTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/src/test/java/no/birkett/kiwi/inequality/VariableExpression.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kiwi-java-master/src/test/java/no/birkett/kiwi/inequality/VariableVariableTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyRender.java" afterDir="false" />
+    <list default="true" id="1496db42-fcdb-42a1-83fc-ba87ea5729ec" name="Default Changelist" comment="Constraint layout toy experiment&#10;implemented constraints and size of fixed and free">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/ConstraintWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/ConstraintWidget.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -334,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619095499820</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Constraint layout toy experiment&#10;implemented constraints and size of fixed and free">
+      <created>1619801351991</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1619801351991</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -362,6 +274,7 @@
     <MESSAGE value="working on constraintlayout but fixed renderer indexbuffer problem" />
     <MESSAGE value="halfassing Constraint layout" />
     <MESSAGE value="Starting again without constraintlayout making basic linear layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting again without constraintlayout making basic linear layout" />
+    <MESSAGE value="Constraint layout toy experiment&#10;implemented constraints and size of fixed and free" />
+    <option name="LAST_COMMIT_MESSAGE" value="Constraint layout toy experiment&#10;implemented constraints and size of fixed and free" />
   </component>
 </project>

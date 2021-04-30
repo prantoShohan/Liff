@@ -16,12 +16,11 @@ public class Main {
         layout.addChild(v2);
         layout.addChild(v3);
         v1.constraintWidget.leftConstraint = new LeftConstraintOf(layout);
-        v1.constraintWidget.rightConstraint = new LeftConstraintOf(v2);
-        //v1.constraintWidget.horizontalSizeConstraint = new FreeSizeConstraint();
         v2.constraintWidget.leftConstraint = new RightConstraintOf(v1);
-        v2.constraintWidget.rightConstraint = new RightConstraintOf(layout);
-        v3.constraintWidget.leftConstraint = new RightConstraintOf(v1);
-        v3.constraintWidget.rightConstraint = new LeftConstraintOf(v2);
+        v3.constraintWidget.leftConstraint = new RightConstraintOf(v2);
+        v3.constraintWidget.rightConstraint = new RightConstraintOf(layout);
+
+
         layout.addEquations();
         layout.updateVariables();
         System.out.println(v1.constraintWidget);
