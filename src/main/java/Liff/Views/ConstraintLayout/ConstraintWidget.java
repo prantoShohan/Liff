@@ -5,12 +5,14 @@ import Liff.Views.ConstraintLayout.Constraints.SizeConstraints.SizeConstraint;
 import Liff.Views.ConstraintLayout.Constraints.PositionConstraints.Constraint;
 import Liff.Views.ConstraintLayout.Constraints.SizeConstraints.FixedSizeConstraint;
 import Liff.Views.ConstraintLayout.Constraints.SizeConstraints.FreeSizeConstraint;
-import Liff.Views.Rectangle;
+import Util.Rectangle;
+import Liff.Views.View;
 import qiwi.*;
 
 public class ConstraintWidget {
     private static int constraintWidgetCount = 0;
 
+    private View targetView;
     private Rectangle targetRectangle;
     private ConstraintLayout parentLayout;
 
@@ -33,8 +35,9 @@ public class ConstraintWidget {
     private HorizontalBehaviour horizontalBehaviour;
     private VerticalBehaviour verticalBehaviour;
 
-    public ConstraintWidget(Rectangle targetRectangle, ConstraintLayout layout) {
-        this.targetRectangle = targetRectangle;
+    public ConstraintWidget(View targetView, ConstraintLayout layout) {
+        this.targetView = targetView;
+        this.targetRectangle = this.targetView.getRectangle();
         this.parentLayout = layout;
 
         variable_left = new Variable(constraintWidgetCount+"_LEFT");
@@ -175,12 +178,9 @@ public class ConstraintWidget {
     }
 
     public void updateTargetRectangle(){
-        this.targetRectangle.posX = (int) this.variable_left.getValue();
-        this.targetRectangle.posY = (int) this.variable_bottom.getValue();
-        this.targetRectangle.sizeX = (int) this.variable_right.getValue();
-        this.targetRectangle.sizeY = (int) this.variable_top.getValue();
-        this.targetRectangle.width = (int) this.variable_width.getValue();
-        this.targetRectangle.height = (int) this.variable_height.getValue();
+        this.targetView.updateRectangle((int) this.variable_left.getValue(),(int) this.variable_bottom.getValue(),(int) this.variable_right.getValue(),(int) this.variable_top.getValue(),
+                (int) this.variable_width.getValue(),(int) this.variable_height.getValue());
+
     }
 
 

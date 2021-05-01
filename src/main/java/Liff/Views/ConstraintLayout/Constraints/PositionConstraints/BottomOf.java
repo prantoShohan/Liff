@@ -1,11 +1,12 @@
 package Liff.Views.ConstraintLayout.Constraints.PositionConstraints;
 
 import Liff.Views.ConstraintLayout.ConstraintLayout;
-import Liff.Views.View;
+
+import Liff.Views.UiView;
 import qiwi.Variable;
 
 public class BottomOf extends Constraint {
-    public BottomOf(View targetView) {
+    public BottomOf(UiView targetView) {
         super(targetView);
     }
 

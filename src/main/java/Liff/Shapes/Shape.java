@@ -25,5 +25,11 @@ public class Shape {
         return color;
     }
 
+    public void setVertices(List<Vertex> vertices) {
+        this.vertices = vertices;
+    }
 
+    public void setColor(Vector4f color) {
+        this.color = color;
+    }
 }

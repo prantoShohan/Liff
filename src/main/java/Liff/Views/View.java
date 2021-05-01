@@ -1,6 +1,7 @@
 package Liff.Views;
 
 import Liff.Views.ConstraintLayout.ConstraintLayout;
+import Util.Rectangle;
 
 public class View {
     protected String id;
@@ -34,5 +35,14 @@ public class View {
                 "id=" + id +
                 " " + rectangle +
                 "}";
+    }
+
+    public void updateRectangle(int posx, int posy, int sizex, int sizey, int width, int height){
+        this.rectangle.posX = posx;
+        this.rectangle.posY = posy;
+        this.rectangle.sizeX = sizex;
+        this.rectangle.sizeY = sizey;
+        this.rectangle.width = width;
+        this.rectangle.height = height;
     }
 }

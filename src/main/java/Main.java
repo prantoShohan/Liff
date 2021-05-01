@@ -1,9 +1,11 @@
+
+import Liff.Application;
 import Liff.Views.ConstraintLayout.ConstraintLayout;
 import Liff.Views.ConstraintLayout.Constraints.PositionConstraints.BottomOf;
 import Liff.Views.ConstraintLayout.Constraints.PositionConstraints.LeftOf;
 import Liff.Views.ConstraintLayout.Constraints.PositionConstraints.RightOf;
 import Liff.Views.ConstraintLayout.Constraints.PositionConstraints.TopOf;
-import Liff.Views.View;
+import Liff.Views.RectView;
 import qiwi.*;
 
 public class Main {
@@ -29,35 +31,35 @@ public class Main {
 //        System.out.println(v2.constraintWidget);
 //        System.out.println(v3.constraintWidget);
 //        System.out.println(layout.constraintWidget);
+//
+//        ConstraintLayout layout = new ConstraintLayout("root", 800, 800);
+//        RectView v1 = new RectView("v1");
+//        RectView v2 = new RectView("v2");
+//        RectView v3 = new RectView("v3");
+//        layout.addChild(v1);
+//        layout.addChild(v2);
+//        layout.addChild(v3);
+//
+//        layout.setRightConstraint(v1, new LeftOf(v2));
+//        layout.setLeftConstraint(v1, new LeftOf(layout));
+//        layout.setBottomConstraint(v1, new BottomOf(layout));
+//        layout.setTopConstraint(v1, new TopOf(layout));
+//
+//        layout.setRightConstraint(v2, new RightOf(layout));
+//        layout.setLeftConstraint(v2, new RightOf(v1));
+//        layout.setBottomConstraint(v2, new BottomOf(layout));
+//        layout.setTopConstraint(v2, new TopOf(v1));
+//
+//        layout.updateConstraints();
+//        layout.updateChildrenVariables();
+//
+//        System.out.println(layout);
 
-        ConstraintLayout layout = new ConstraintLayout("root", 800, 800);
-        View v1 = new View("v1");
-        View v2 = new View("v2");
-        View v3 = new View("v3");
-        layout.addChild(v1);
-        layout.addChild(v2);
-        layout.addChild(v3);
-
-        layout.setRightConstraint(v1, new LeftOf(v2));
-        layout.setLeftConstraint(v1, new LeftOf(layout));
-        layout.setBottomConstraint(v1, new BottomOf(layout));
-        layout.setTopConstraint(v1, new TopOf(layout));
-
-        layout.setRightConstraint(v2, new RightOf(layout));
-        layout.setLeftConstraint(v2, new RightOf(v1));
-        layout.setBottomConstraint(v2, new BottomOf(layout));
-        layout.setTopConstraint(v2, new TopOf(v1));
-
-        layout.updateConstraints();
-        layout.updateChildrenVariables();
-
-        System.out.println(layout);
 
 
-
-//        Application app = new Application(740, 620, "Liff of a pimaina");
-//        app.setRenderObject(new MyRender());
-//        app.run();
+        Application app = new Application(740, 620, "Liff of a pimaina");
+        app.setRenderObject(new MyRender());
+        app.run();
 
     }
 }

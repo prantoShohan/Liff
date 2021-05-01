@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1496db42-fcdb-42a1-83fc-ba87ea5729ec" name="Default Changelist" comment="added margins to the toy constraint layout">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Real/ConstraintLayout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Real/ConstraintWidget.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Real/Constraints/BottomOf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Real/Constraints/Constraint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Real/Constraints/FixedSizeConstraint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Real/Constraints/FreeSizeConstraint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Real/Constraints/LeftOf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Real/Constraints/NullConstraint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Real/Constraints/RightOf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Real/Constraints/SizeConstraint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Real/Constraints/TopOf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Real/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Real/View.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/eFixedSizeConstraint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/eFreeSizeConstraint.java" afterDir="false" />
+    <list default="true" id="1496db42-fcdb-42a1-83fc-ba87ea5729ec" name="Default Changelist" comment="Rearranged the packages">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/RectView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/UiView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
@@ -28,50 +15,37 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Shapes/Rectangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/FrameLayout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/Layout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/LayoutGravity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/LayoutParameters.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/View.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ViewPosition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ViewSize$Behaviour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ViewSize.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/experiment/BottomConstraintOf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/experiment/Constraint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/experiment/ConstraintLayout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/experiment/ConstraintWidget.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/experiment/Experiment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/experiment/FixedSizeConstraint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/experiment/FreeSizeConstraint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/experiment/LeftConstraintOf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/experiment/RightConstraintOf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/experiment/SizeConstraint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/experiment/TopConstraintOf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/experiment/View.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Renderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Renderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Shapes/RectShape.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Shapes/RectShape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/ConstraintLayout$Mode.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/ConstraintLayout$Mode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/ConstraintLayout.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/ConstraintLayout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/ConstraintWidget$HorizontalBehaviour.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/ConstraintWidget$HorizontalBehaviour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/ConstraintWidget$VerticalBehaviour.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/ConstraintWidget$VerticalBehaviour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/ConstraintWidget.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/ConstraintWidget.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/BottomOf.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/BottomOf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/Constraint.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/Constraint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/LeftOf.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/LeftOf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/NullConstraint.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/NullConstraint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/RightOf.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/RightOf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/TopOf.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/TopOf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/View.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyRender.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/MyRender.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Shapes/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Shapes/RectShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/FrameLayout.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/Layout.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/LayoutGravity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/LayoutParameters.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/View.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/ViewPosition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/ViewSize.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/BottomConstraintOf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/eBottomEConstraintOf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/Constraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/eConstraint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/ConstraintLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/eConstraintLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/ConstraintWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/eConstraintWidget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/Experiment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/FixedSizeConstraint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/FreeSizeConstraint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/LeftConstraintOf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/eLeftConstraintOf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/RightConstraintOf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/eRightConstraintOf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/SizeConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/eSizeConstraint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/TopConstraintOf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/eTopConstraintOf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/experiment/eView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Renderer/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Renderer/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Shapes/RectShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Shapes/RectShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Shapes/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Shapes/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/ConstraintLayout/ConstraintLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/ConstraintLayout/ConstraintLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/ConstraintLayout/ConstraintWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/ConstraintLayout/ConstraintWidget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/BottomOf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/BottomOf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/Constraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/Constraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/LeftOf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/LeftOf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/NullConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/NullConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/RightOf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/RightOf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/TopOf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/TopOf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyRender.java" afterDir="false" />
     </list>
@@ -324,7 +298,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619802214236</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="implemented the constraint layout for basic.&#10;the features include free and fixed size constraints, margins, position constraints.">
+      <created>1619873852521</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1619873852521</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Rearranged the packages">
+      <created>1619874464325</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1619874464325</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -354,6 +342,30 @@
     <MESSAGE value="Starting again without constraintlayout making basic linear layout" />
     <MESSAGE value="Constraint layout toy experiment&#10;implemented constraints and size of fixed and free" />
     <MESSAGE value="added margins to the toy constraint layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="added margins to the toy constraint layout" />
+    <MESSAGE value="implemented the constraint layout for basic.&#10;the features include free and fixed size constraints, margins, position constraints." />
+    <MESSAGE value="Rearranged the packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rearranged the packages" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/Liff/Renderer/Renderer.java</url>
+          <line>56</line>
+          <properties class="Liff.Renderer.Renderer" method="executeDrawCalls">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Liff/Views/RectView.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Liff$Main.ic" NAME="Main Coverage Results" MODIFIED="1619883460804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

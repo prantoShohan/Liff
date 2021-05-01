@@ -1,4 +1,4 @@
-package Liff.Views;
+package Util;
 
 public class Rectangle {
     public int posX, posY, width, height, sizeX, sizeY;
