@@ -1,10 +1,9 @@
-import Liff.Views.Real.ConstraintLayout;
-import Liff.Views.Real.Constraints.BottomOf;
-import Liff.Views.Real.Constraints.LeftOf;
-import Liff.Views.Real.Constraints.RightOf;
-import Liff.Views.Real.Constraints.TopOf;
-import Liff.Views.Real.View;
-import Liff.Views.experiment.*;
+import Liff.Views.ConstraintLayout.ConstraintLayout;
+import Liff.Views.ConstraintLayout.Constraints.PositionConstraints.BottomOf;
+import Liff.Views.ConstraintLayout.Constraints.PositionConstraints.LeftOf;
+import Liff.Views.ConstraintLayout.Constraints.PositionConstraints.RightOf;
+import Liff.Views.ConstraintLayout.Constraints.PositionConstraints.TopOf;
+import Liff.Views.View;
 import qiwi.*;
 
 public class Main {

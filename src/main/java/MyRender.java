@@ -31,6 +31,7 @@ public class MyRender implements Renderable {
 
     @Override
     public void render(float dt) {
+
         Renderer.executeDrawCalls();
     }
 }
