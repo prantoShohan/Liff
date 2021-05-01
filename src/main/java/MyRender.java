@@ -1,6 +1,6 @@
 import Liff.Renderable;
 import Liff.Renderer.*;
-import Liff.Shapes.Rectangle;
+import Liff.Shapes.RectShape;
 import org.joml.Vector2f;
 import org.joml.Vector4f;
 
@@ -22,9 +22,9 @@ public class MyRender implements Renderable {
 
 
 
-        Renderer.submit(new Rectangle(100.0f, 100.0f, 200.0f, 200.0f, color), shader, camera);
-        Renderer.submit(new Rectangle(200.0f, 200.0f, 500.0f, 500.0f, color1), shader, camera);
-        Renderer.submit(new Rectangle(300.0f, 300.0f, 500.0f, 500.0f, color2), shader, camera);
+        Renderer.submit(new RectShape(100.0f, 100.0f, 200.0f, 200.0f, color), shader, camera);
+        Renderer.submit(new RectShape(200.0f, 200.0f, 500.0f, 500.0f, color1), shader, camera);
+        Renderer.submit(new RectShape(300.0f, 300.0f, 500.0f, 500.0f, color2), shader, camera);
         Renderer.processDrawCall();
 
     }
