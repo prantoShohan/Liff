@@ -6,14 +6,18 @@ import Liff.Views.ConstraintLayout.Constraints.PositionConstraints.BottomOf;
 import Liff.Views.ConstraintLayout.Constraints.PositionConstraints.LeftOf;
 import Liff.Views.ConstraintLayout.Constraints.PositionConstraints.RightOf;
 import Liff.Views.ConstraintLayout.Constraints.PositionConstraints.TopOf;
+import Liff.Views.FocusBehaviour;
 import Liff.Views.RectView;
 import org.joml.Vector2f;
 import org.joml.Vector4f;
+import org.lwjgl.system.CallbackI;
 import qiwi.DuplicateConstraintException;
 import qiwi.UnsatisfiableConstraintException;
 
 
 public class MyRender implements Renderable {
+
+    private ConstraintLayout layout;
 
 
     @Override
@@ -31,10 +35,12 @@ public class MyRender implements Renderable {
         //Renderer.submit(new RectShape(200.0f, 200.0f, 500.0f, 500.0f, color1), Renderer.getShader("UiShader"), Renderer.getCamera("UiCamera"));
         //Renderer.submit(new RectShape(300.0f, 300.0f, 500.0f, 500.0f, color2), Renderer.getShader("UiShader"), Renderer.getCamera("UiCamera"));
 
-        ConstraintLayout layout = new ConstraintLayout("root", 740, 620);
+        layout = new ConstraintLayout("root", 740, 620);
         RectView v1 = new RectView("v1");
         RectView v2 = new RectView("v2");
         RectView v3 = new RectView("v3");
+        v1.addBehaviours(new FocusBehaviour(v1));
+        v2.addBehaviours(new FocusBehaviour(v2));
         layout.addChild(v1);
         layout.addChild(v2);
         layout.addChild(v3);
@@ -49,15 +55,7 @@ public class MyRender implements Renderable {
         layout.setBottomConstraint(v2, new BottomOf(layout));
         layout.setTopConstraint(v2, new TopOf(layout));
 
-        try {
-            layout.updateConstraints();
-        } catch (UnsatisfiableConstraintException e) {
-            e.printStackTrace();
-        } catch (DuplicateConstraintException e) {
-            e.printStackTrace();
-        }
-        layout.updateChildrenVariables();
-        layout.updateChildren();
+        layout.update(0.0f);
 
         System.out.println(layout);
 
@@ -68,7 +66,7 @@ public class MyRender implements Renderable {
 
     @Override
     public void render(float dt) {
-
+        layout.update(dt);
 
         Renderer.executeDrawCalls();
     }

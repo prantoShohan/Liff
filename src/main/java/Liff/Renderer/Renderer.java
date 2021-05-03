@@ -15,6 +15,8 @@ public class Renderer {
     private static Hashtable<String, Shader> shaderLibrary = new Hashtable<>();
     private static Hashtable<String, Camera> cameraLibrary = new Hashtable<>();
 
+    private static boolean shouldRedraw = true;
+
     private Renderer(){
         drawDataList = new ArrayList<>();
         drawCalls = new ArrayList<>();
@@ -26,38 +28,52 @@ public class Renderer {
         return instance;
     }
 
+    public static boolean isShouldRedraw() {
+        return shouldRedraw;
+    }
+
+    public static void setShouldRedraw(boolean shouldRedraw) {
+        shouldRedraw = shouldRedraw;
+    }
+
     public static void submit(Shape shape, Shader shader, Camera camera){
         drawDataList.add(new DrawData(shape, shader, camera));
     }
 
     public static void processDrawCall(){
-        DrawCall currentDrawCall = null;
-        for(DrawData d : drawDataList){
-            if(currentDrawCall == null){
-                currentDrawCall = new DrawCall(d.shader, d.camera);
-                currentDrawCall.addDrawData(d);
-                //drawCalls.add(currentDrawCall);
-            }else{
-                if(currentDrawCall.isSameAs(d)){
-                    currentDrawCall.addDrawData(d);
-                    //drawCalls.add(currentDrawCall);
-                }
-                else{
-                    drawCalls.add(currentDrawCall);
+
+        if (shouldRedraw) {
+            DrawCall currentDrawCall = null;
+            for(DrawData d : drawDataList){
+                if(currentDrawCall == null){
                     currentDrawCall = new DrawCall(d.shader, d.camera);
                     currentDrawCall.addDrawData(d);
+                    //drawCalls.add(currentDrawCall);
+                }else{
+                    if(currentDrawCall.isSameAs(d)){
+                        currentDrawCall.addDrawData(d);
+                        //drawCalls.add(currentDrawCall);
+                    }
+                    else{
+                        drawCalls.add(currentDrawCall);
+                        currentDrawCall = new DrawCall(d.shader, d.camera);
+                        currentDrawCall.addDrawData(d);
 
+                    }
                 }
             }
+            //TODO position this on appropriate place
+            drawCalls.add(currentDrawCall);
+            shouldRedraw = false;
         }
-        //TODO position this on appropriate place
-        drawCalls.add(currentDrawCall);
     }
 
     public static void executeDrawCalls(){
-        for(DrawCall d: drawCalls){
-            d.processDrawData();
-            d.render();
+        if (true) {
+            for(DrawCall d: drawCalls){
+                d.processDrawData();
+                d.render();
+            }
         }
     }
 

@@ -59,8 +59,8 @@ qiwi/Expression.java
  qiwi.Expression
 Liff/Views/ConstraintLayout/Constraints/SizeConstraints/SizeConstraint.java
  Liff.Views.ConstraintLayout.Constraints.SizeConstraints.SizeConstraint
-Liff/Application.java
- Liff.Application
+qiwi/NonlinearExpressionException.java
+ qiwi.NonlinearExpressionException
 Liff/Renderer/VertexArray.java
  Liff.Renderer.VertexArray
 Liff/KeyListener.java
@@ -78,18 +78,19 @@ Liff/Renderer/Camera.java
  Liff.Renderer.Camera
 Liff/Renderer/Texture.java
  Liff.Renderer.Texture
-qiwi/NonlinearExpressionException.java
- qiwi.NonlinearExpressionException
-Liff/Renderer/Renderer.java
- Liff.Renderer.Renderer
 Liff/Views/UiView.java
  Liff.Views.UiView
-Liff/Views/ConstraintLayout/Constraints/PositionConstraints/LeftOf.java
- Liff.Views.ConstraintLayout.Constraints.PositionConstraints.LeftOf
+Liff/Views/View.java
+ Liff.Views.View
+Liff/Views/ConstraintLayout/ConstraintLayout.java
+ Liff.Views.ConstraintLayout.ConstraintLayout
+ Liff.Views.ConstraintLayout.ConstraintLayout$Mode
 Liff/Views/ConstraintLayout/Constraints/PositionConstraints/BottomOf.java
  Liff.Views.ConstraintLayout.Constraints.PositionConstraints.BottomOf
 Liff/Views/ConstraintLayout/Constraints/PositionConstraints/Constraint.java
  Liff.Views.ConstraintLayout.Constraints.PositionConstraints.Constraint
+Liff/Application.java
+ Liff.Application
 Liff/Views/ConstraintLayout/ConstraintWidget.java
  Liff.Views.ConstraintLayout.ConstraintWidget
  Liff.Views.ConstraintLayout.ConstraintWidget$HorizontalBehaviour
@@ -98,15 +99,18 @@ Liff/Views/ConstraintLayout/Constraints/PositionConstraints/NullConstraint.java
  Liff.Views.ConstraintLayout.Constraints.PositionConstraints.NullConstraint
 Liff/Views/ConstraintLayout/Constraints/PositionConstraints/TopOf.java
  Liff.Views.ConstraintLayout.Constraints.PositionConstraints.TopOf
+Liff/Views/ConstraintLayout/Constraints/PositionConstraints/LeftOf.java
+ Liff.Views.ConstraintLayout.Constraints.PositionConstraints.LeftOf
 Liff/Views/ConstraintLayout/Constraints/PositionConstraints/RightOf.java
  Liff.Views.ConstraintLayout.Constraints.PositionConstraints.RightOf
-Liff/Views/View.java
- Liff.Views.View
-Liff/Views/ConstraintLayout/ConstraintLayout.java
- Liff.Views.ConstraintLayout.ConstraintLayout
- Liff.Views.ConstraintLayout.ConstraintLayout$Mode
 Liff/Views/RectView.java
  Liff.Views.RectView
+Liff/Renderer/Renderer.java
+ Liff.Renderer.Renderer
+Liff/Views/FocusBehaviour.java
+ Liff.Views.FocusBehaviour
+Liff/Views/Behaviour.java
+ Liff.Views.Behaviour
 MyRender.java
  MyRender
 Main.java

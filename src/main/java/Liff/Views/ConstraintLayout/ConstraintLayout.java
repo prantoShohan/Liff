@@ -13,6 +13,8 @@ import java.util.Hashtable;
 import java.util.Set;
 
 public class ConstraintLayout extends UiView {
+    private boolean shouldUpdateConstraints = true;
+
     private enum Mode {CHILD_MODE, ROOT_MODE};
 
     private Solver constraintSolver = new Solver();
@@ -36,15 +38,23 @@ public class ConstraintLayout extends UiView {
         this.constraintWidget = new ConstraintWidget(this, null);
     }
 
+    public void setShouldUpdateConstraints() {
+        this.shouldUpdateConstraints = true;
+    }
+
+
     @Override
     public void update(float dt) {
         //TODO it is doing everything everytime
-        try {
-            this.updateConstraints();
-        } catch (UnsatisfiableConstraintException | DuplicateConstraintException e) {
-            e.printStackTrace();
+        if (shouldUpdateConstraints) {
+            try {
+                this.updateConstraints();
+            } catch (UnsatisfiableConstraintException | DuplicateConstraintException e) {
+                e.printStackTrace();
+            }
+            this.updateChildrenVariables();
+            shouldUpdateConstraints = false;
         }
-        this.updateChildrenVariables();
         Set<UiView> viewSet = children.keySet();
         for(UiView v:viewSet){
             v.update(dt);
