@@ -27,12 +27,6 @@ public class MyRender implements Renderable {
         Vector4f color1 = new Vector4f(1.0f, 0.0f, 0.3f, 1.0f);
         Vector4f color2 = new Vector4f(1.0f, 0.5f, 0.3f, 1.0f);
 
-
-
-        //Renderer.submit(new RectShape(100.0f, 100.0f, 200.0f, 200.0f, color), Renderer.getShader("UiShader"), Renderer.getCamera("UiCamera"));
-        //Renderer.submit(new RectShape(200.0f, 200.0f, 500.0f, 500.0f, color1), Renderer.getShader("UiShader"), Renderer.getCamera("UiCamera"));
-        //Renderer.submit(new RectShape(300.0f, 300.0f, 500.0f, 500.0f, color2), Renderer.getShader("UiShader"), Renderer.getCamera("UiCamera"));
-
         layout = new ConstraintLayout("root", 740, 620);
         RectView v1 = new RectView("v1");
         RectView v2 = new RectView("v2");
@@ -45,6 +39,7 @@ public class MyRender implements Renderable {
                 System.out.println("Clicked");
             }
         }));
+
         layout.addChild(v1);
         layout.addChild(v2);
         layout.addChild(v3);

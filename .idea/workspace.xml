@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1496db42-fcdb-42a1-83fc-ba87ea5729ec" name="Default Changelist" comment="Added FocusBehaviour system">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Behaviours/OnClickBehaviour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Util/Command.java" afterDir="false" />
+    <list default="true" id="1496db42-fcdb-42a1-83fc-ba87ea5729ec" name="Default Changelist" comment="Added OnClickBehaviour system">
+      <change afterPath="$PROJECT_DIR$/src/main/java/EasyFont.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FontDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/IOUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Truetype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TruetypeOversample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
@@ -14,52 +17,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/KeyListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/MouseListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Camera.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/DrawCall.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/DrawData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Renderer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Shader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Texture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Vertex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/VertexArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Shapes/RectShape.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Shapes/Shape.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/Behaviour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/ConstraintLayout$Mode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/ConstraintLayout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/ConstraintWidget$HorizontalBehaviour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/ConstraintWidget$VerticalBehaviour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/ConstraintWidget.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/BottomOf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/Constraint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/LeftOf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/NullConstraint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/RightOf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/PositionConstraints/TopOf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/SizeConstraints/FixedSizeConstraint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/SizeConstraints/FreeSizeConstraint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/ConstraintLayout/Constraints/SizeConstraints/SizeConstraint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/FocusBehaviour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/RectView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/UiView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/View.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Window.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyRender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyRender.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/MyRender.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/MouseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/MouseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/Behaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Behaviours/Behaviour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/ConstraintLayout/ConstraintWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/ConstraintLayout/ConstraintWidget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/FocusBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Behaviours/FocusBehaviour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/RectView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/RectView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyRender.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -339,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620022005080</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added OnClickBehaviour system">
+      <created>1620293496251</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1620293496251</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -373,16 +343,12 @@
     <MESSAGE value="Rearranged the packages" />
     <MESSAGE value="Created basic ConstraintLayout and tested it out" />
     <MESSAGE value="Added FocusBehaviour system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added FocusBehaviour system" />
+    <MESSAGE value="Added OnClickBehaviour system" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added OnClickBehaviour system" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MyRender.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="2" />
