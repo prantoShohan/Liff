@@ -9,6 +9,7 @@ public class MouseListener {
     private double posX, posY, lastX, lastY;
     private boolean mouseButtonPressed[] = new boolean[3];
     private boolean isDragging;
+    //TODO create Callback system with notifier list
 
     private MouseListener(){
         this.scrollX = 0;

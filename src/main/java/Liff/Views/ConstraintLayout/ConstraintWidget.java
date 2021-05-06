@@ -145,6 +145,8 @@ public class ConstraintWidget {
             if(horizontalBehaviour == HorizontalBehaviour.CENTER_HORIZONTAL){
                 solver.addConstraint(Symbolics.equals(this.variable_left, Symbolics.divide(Symbolics.subtract(Symbolics.add(leftConstraint.getTargetVariable(parentLayout), rightConstraint.getTargetVariable(parentLayout)), this.variable_width), 1/horizontalBias)));
                 solver.addConstraint(Symbolics.equals(this.variable_right, Symbolics.add(this.variable_left, variable_width)));
+                //solver.addConstraint(Symbolics.lessThanOrEqualTo(leftConstraint.getTargetVariable(parentLayout), this.variable_left));
+                //solver.addConstraint(Symbolics.greaterThanOrEqualTo(rightConstraint.getTargetVariable(parentLayout), this.variable_right));
             }else if(horizontalBehaviour == HorizontalBehaviour.LEFT_ALIGN){
                 solver.addConstraint(Symbolics.equals(Symbolics.subtract(this.variable_left, this.targetRectangle.margin_left), leftConstraint.getTargetVariable(parentLayout)));
                 solver.addConstraint(Symbolics.equals(this.variable_right, Symbolics.add(this.variable_left, variable_width)));

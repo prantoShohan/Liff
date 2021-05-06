@@ -1,9 +1,9 @@
-package Liff.Views;
+package Liff.Views.Behaviours;
 
 import Liff.MouseListener;
 import Liff.Renderer.Renderer;
-import Liff.Shapes.RectShape;
 import Liff.Shapes.Shape;
+import Liff.Views.RectView;
 import Util.Rectangle;
 import org.joml.Vector4f;
 
@@ -12,8 +12,10 @@ public class FocusBehaviour extends Behaviour{
     Shape targetShape;
     Vector4f originalColor;
     private boolean inFocus = false;
+    private float focusColorMultiplier = 1.5f;
 
-    public FocusBehaviour(RectView parent) {
+    public FocusBehaviour(RectView parent){
+        super("FOCUS_BEHAVIOUR");
         this.setParent(parent);
         this.targetRect = this.parent.getRectangle();
         this.targetShape = this.parent.getShape();
@@ -31,7 +33,7 @@ public class FocusBehaviour extends Behaviour{
     public void update(float dt) {
         if (!inFocus) {
             if(collide(MouseListener.getX(), MouseListener.getY())){
-                targetShape.setColor(new Vector4f(0.4f, 0.4f, 0.4f, 1.0f));
+                targetShape.setColor(new Vector4f(originalColor.x*focusColorMultiplier, originalColor.y*focusColorMultiplier, originalColor.z*focusColorMultiplier, originalColor.w*focusColorMultiplier));
                 inFocus = true;
                 Renderer.setShouldRedraw(true);
                 System.out.println("inFocus");
@@ -40,8 +42,13 @@ public class FocusBehaviour extends Behaviour{
             if(!collide(MouseListener.getX(), MouseListener.getY())){
                 targetShape.setColor(originalColor);
                 inFocus = false;
-                Renderer.setShouldRedraw(true);;
+                Renderer.setShouldRedraw(true);
+                System.out.println("outFocus");
             }
         }
+    }
+
+    public boolean isInFocus() {
+        return inFocus;
     }
 }
