@@ -39,7 +39,7 @@ public class Application {
     }
 
     private void loop(){
-        float beginTime = Time.getTime();
+        float beginTime = (float)glfwGetTime();
         float endTime;
         float dt = 0.0f;
 
@@ -50,7 +50,7 @@ public class Application {
             if(dt>0) render(dt);
             glfwSwapBuffers(window.getWindowReference());
 
-            endTime = Time.getTime();
+            endTime = (float)glfwGetTime();
             dt = endTime - beginTime;
             beginTime = endTime;
         }
