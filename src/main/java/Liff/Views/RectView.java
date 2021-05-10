@@ -27,8 +27,6 @@ public class RectView extends UiView{
         this.textureName = textureName;
         shape = new RectShape(sx, sy, textureName, new Vector2f[]{new Vector2f(0, 0), new Vector2f(1, 0), new Vector2f(0, 1), new Vector2f(1, 1)});
         this.setDefaultSize(sx, sy);
-//        this.textureName = textureName;
-//        this.getShape().setTextureName(textureName);
     }
 
     public void setDefaultSize(int x, int y){
@@ -51,7 +49,6 @@ public class RectView extends UiView{
         Set<String> behaviourId = behaviours.keySet();
         for(String b: behaviourId){
             behaviours.get(b).update(dt);
-            //System.out.println("updating behaviours");
         }
     }
 

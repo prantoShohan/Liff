@@ -93,6 +93,7 @@ public class Shader {
         glUseProgram(shaderID);
         uploadMatrix4f("uProjection", camera.getProjection());
         uploadMatrix4f("uView", camera.getView());
+        updateTextureSamplerUniform();
     }
 
     public void updateTextureSamplerUniform(){

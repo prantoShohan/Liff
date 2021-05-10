@@ -106,6 +106,7 @@ public class MyRender implements Renderable {
         Renderer.addShader("UiShader", "src/main/resources/shaders/default.glsl");
         Renderer.addCamera("UiCamera", new Vector2f());
         Renderer.addTexture("NEW_TEXTURE", "src/main/resources/textures/logo.png");
+        Renderer.addTexture("Superman", "src/main/resources/textures/Superman.png");
 
         Vector4f color = new Vector4f(1.0f, 1.0f, 0.0f, 1.0f);
         Vector4f color1 = new Vector4f(1.0f, 0.0f, 0.3f, 1.0f);
@@ -116,6 +117,7 @@ public class MyRender implements Renderable {
         RectView v2 = new RectView("v2");
         RectView v3 = new RectView("v3");
         RectView image = new RectView("image","NEW_TEXTURE", 100, 100);
+        RectView image2 = new RectView("im2", "Superman", 200, 200);
 
         v1.addBehaviours(new FocusBehaviour(v1));
         v2.addBehaviours(new FocusBehaviour(v2));
@@ -130,6 +132,7 @@ public class MyRender implements Renderable {
         layout.addChild(v2);
         layout.addChild(v3);
         layout.addChild(image);
+        layout.addChild(image2);
 
         layout.setRightConstraint(v1, new RightOf(layout));
         layout.setLeftConstraint(v1, new LeftOf(layout));
@@ -140,6 +143,11 @@ public class MyRender implements Renderable {
         layout.setLeftConstraint(  image, new LeftOf(layout));
         layout.setBottomConstraint(image, new TopOf(v1));
         layout.setTopConstraint(   image, new TopOf(layout));
+
+        layout.setRightConstraint( image2, new RightOf(layout));
+        layout.setLeftConstraint(  image2, new LeftOf(layout));
+        layout.setBottomConstraint(image2, new BottomOf(layout));
+        layout.setTopConstraint(   image2, new BottomOf(v1));
 
         layout.setRightConstraint(v2, new RightOf(layout));
         layout.setLeftConstraint(v2, new RightOf(v1));
