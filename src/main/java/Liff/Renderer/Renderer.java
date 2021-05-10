@@ -12,8 +12,8 @@ public class Renderer {
     private static List<DrawData> drawDataList;
     private static List<DrawCall> drawCalls;
     private static Renderer instance = null;
-    private static Hashtable<String, Shader> shaderLibrary = new Hashtable<>();
-    private static Hashtable<String, Camera> cameraLibrary = new Hashtable<>();
+    private static Hashtable<String, Shader>  shaderLibrary = new Hashtable<>();
+    private static Hashtable<String, Camera>  cameraLibrary = new Hashtable<>();
     private static Hashtable<String, Texture> textureLibrary = new Hashtable<>();
 
     private static boolean shouldRedraw = true;

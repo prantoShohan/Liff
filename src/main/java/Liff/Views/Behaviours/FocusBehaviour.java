@@ -1,6 +1,6 @@
 package Liff.Views.Behaviours;
 
-import Liff.MouseListener;
+import Liff.Core.MouseListener;
 import Liff.Renderer.Renderer;
 import Liff.Shapes.Shape;
 import Liff.Views.RectView;

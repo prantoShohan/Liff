@@ -1,4 +1,4 @@
-import Liff.Renderable;
+import Liff.Core.Renderable;
 import Liff.Renderer.*;
 import Util.Command;
 import Liff.Views.ConstraintLayout.ConstraintLayout;

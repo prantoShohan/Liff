@@ -1,7 +1,6 @@
-package Liff;
+package Liff.Core;
 
 import Liff.Renderer.Renderer;
-import Util.Time;
 import org.lwjgl.Version;
 
 import static org.lwjgl.glfw.Callbacks.glfwFreeCallbacks;

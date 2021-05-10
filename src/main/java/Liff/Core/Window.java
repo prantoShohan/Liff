@@ -1,10 +1,10 @@
-package Liff;
+package Liff.Core;
 
-import org.lwjgl.Version;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
 
-import static org.lwjgl.glfw.Callbacks.glfwFreeCallbacks;
+
+
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.system.MemoryUtil.NULL;
@@ -61,12 +61,17 @@ public class Window {
             }
         });
 
+
         glfwSetCursorPosCallback(windowReference, MouseListener::mousePosCallback);
         glfwSetMouseButtonCallback(windowReference, MouseListener::mouseButtonCallback);
         glfwSetScrollCallback(windowReference, MouseListener::mouseScrollCallback);
         glfwSetKeyCallback(windowReference, KeyListener::keyCallback);
 
         GL.createCapabilities();
+
+        glEnable(GL_BLEND);
+        glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
 
     }
 

@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1496db42-fcdb-42a1-83fc-ba87ea5729ec" name="Default Changelist" comment="Created the Texture Rendering system">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/textures/Superman.png" afterDir="false" />
+    <list default="true" id="1496db42-fcdb-42a1-83fc-ba87ea5729ec" name="Default Changelist" comment="Fixed Issues from multiple texture">
+      <change afterPath="$PROJECT_DIR$/hs_err_pid21048.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
@@ -13,20 +13,29 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/DrawCall.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/DrawCall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Renderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Renderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Shader.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Shader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Texture.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Texture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Vertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderer/Vertex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/KeyListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/MouseListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Renderable.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Shapes/RectShape.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Shapes/RectShape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/RectView.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/RectView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyRender$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/MyRender$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/Behaviours/FocusBehaviour.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/Behaviours/FocusBehaviour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/Behaviours/OnClickBehaviour.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Liff/Views/Behaviours/OnClickBehaviour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Liff/Window.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyRender.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/MyRender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/Shaders/default.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/Shaders/default.glsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Renderer/Shader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Renderer/Shader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/RectView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/RectView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Core/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/KeyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Core/KeyListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/MouseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Core/MouseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Renderable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Core/Renderable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Shapes/RectShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Shapes/RectShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/Behaviours/FocusBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Behaviours/FocusBehaviour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Views/Behaviours/OnClickBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Views/Behaviours/OnClickBehaviour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Liff/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Liff/Core/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyRender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/shaders/default.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/shaders/default.glsl" afterDir="false" />
     </list>
@@ -82,7 +91,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/Liff/Renderer/Renderer.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/Liff/Application.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Liff/Core/Application.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/MyRender.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/Liff/Views/RectView.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/Liff/Shapes/RectShape.java" root0="FORCE_HIGHLIGHTING" />
@@ -349,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620663755604</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Fixed Issues from multiple texture">
+      <created>1620666493119</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1620666493119</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -387,7 +403,8 @@
     <MESSAGE value="Experimenting with stb types" />
     <MESSAGE value="Fixed the time.gettime() to glfwGetTime()" />
     <MESSAGE value="Created the Texture Rendering system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the Texture Rendering system" />
+    <MESSAGE value="Fixed Issues from multiple texture" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Issues from multiple texture" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

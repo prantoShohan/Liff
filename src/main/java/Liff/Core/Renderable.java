@@ -1,4 +1,4 @@
-package Liff;
+package Liff.Core;
 
 public interface Renderable {
     void init();

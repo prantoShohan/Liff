@@ -1,5 +1,5 @@
 
-import Liff.Application;
+import Liff.Core.Application;
 import org.lwjgl.BufferUtils;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.glfw.GLFWVidMode;
