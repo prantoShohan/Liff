@@ -10,6 +10,7 @@ public class View {
 
     public View(String id){
         this.id = id;
+        //TODO this should come from above
         this.rectangle = new Rectangle(0, 0, 100, 50);
     }
 

@@ -2,14 +2,15 @@ package Liff.Renderer;
 
 import org.lwjgl.BufferUtils;
 
-import java.nio.Buffer;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Hashtable;
 import java.util.List;
 
 import static org.lwjgl.opengl.GL11.*;
+import static org.lwjgl.opengl.GL45.glBindTextureUnit;
 
 public class DrawCall {
     private Shader shader;
@@ -17,6 +18,8 @@ public class DrawCall {
     private FloatBuffer vertexBuffer;
     private IntBuffer indexBuffer;
     private List<DrawData> drawDataList;
+    private List<String> textureNameList = new ArrayList<>();
+    private Hashtable<String, Integer> textureSlots = new Hashtable<>();
 
 
     public DrawCall(Shader shader, Camera camera) {
@@ -26,8 +29,28 @@ public class DrawCall {
 
     }
 
+    private void processTextures(){
+        for(DrawData d: drawDataList){
+            if (d.shape.getTextureName() != "NO_TEXTURE"){
+                if(!textureNameList.contains(d.shape.getTextureName())) {
+                    textureNameList.add(d.shape.getTextureName());
+                }
+            }
+        }
+        if(textureNameList.size()>8){
+            System.out.println("BatchRenederer Should be updated");
+        }
+        for(int i = 0; i< textureNameList.size();i++){
+            glBindTextureUnit(i, Renderer.getTextureId(textureNameList.get(i)));
+            this.textureSlots.put(textureNameList.get(i), i);
+        }
+
+
+    }
+
 
     public void processDrawData(){
+        this.processTextures();
         List<Float> vertexBufferList = new ArrayList<>();
         List<Integer> indexBufferList = new ArrayList<>();
         int currentIndex = 0;
@@ -40,6 +63,9 @@ public class DrawCall {
                 vertexBufferList.add(d.shape.getColor().y);
                 vertexBufferList.add(d.shape.getColor().z);
                 vertexBufferList.add(d.shape.getColor().w);
+                vertexBufferList.add(v.u);
+                vertexBufferList.add(v.v);
+                vertexBufferList.add(this.getTextureSlot(d.shape.getTextureName()));
             }
             for(int i: d.shape.getIndices()){
                 indexBufferList.add(i+currentIndex);
@@ -58,6 +84,14 @@ public class DrawCall {
         }
         vertexBuffer.flip();
         indexBuffer.flip();
+    }
+
+    private Float getTextureSlot(String textureName) {
+        if( textureName == "NO_TEXTURE"){
+            return -1.0f;
+        }else {
+            return (float) this.textureSlots.get(textureName);
+        }
     }
 
     public void render(){

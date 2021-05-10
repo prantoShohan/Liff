@@ -95,6 +95,12 @@ public class Shader {
         uploadMatrix4f("uView", camera.getView());
     }
 
+    public void updateTextureSamplerUniform(){
+        int loc = glGetUniformLocation(this.shaderID, "texture_samplers");
+        int samplers[] = {0, 1, 2, 3, 4, 5, 6, 7};
+        glUniform1iv(loc, samplers);
+    }
+
     public void unbind(){
         glUseProgram(0);
     }

@@ -4,7 +4,9 @@ import Liff.Renderer.Renderer;
 import Liff.Shapes.RectShape;
 import Liff.Shapes.Shape;
 import Liff.Views.Behaviours.Behaviour;
+import org.joml.Vector2f;
 import org.joml.Vector4f;
+import org.lwjgl.system.CallbackI;
 
 import java.util.Hashtable;
 import java.util.Set;
@@ -12,17 +14,27 @@ import java.util.Set;
 public class RectView extends UiView{
     private RectShape shape;
     private Hashtable<String, Behaviour> behaviours = new Hashtable<>();
+    private String textureName;
 
     public RectView(String id) {
         super(id);
-        //TODO the bias doesnt work
+        // TODO the bias doesnt work
         shape = new RectShape(0, 0, 100, 50, new Vector4f(0.3f, 0.3f, 0.3f, 1.0f));
+    }
+
+    public RectView(String id, String textureName, int sx, int sy){
+        super(id);
+        this.textureName = textureName;
+        shape = new RectShape(sx, sy, textureName, new Vector2f[]{new Vector2f(0, 0), new Vector2f(1, 0), new Vector2f(0, 1), new Vector2f(1, 1)});
+        this.setDefaultSize(sx, sy);
+//        this.textureName = textureName;
+//        this.getShape().setTextureName(textureName);
     }
 
     public void setDefaultSize(int x, int y){
         this.rectangle.width = x;
         this.rectangle.height = y;
-        shape = new RectShape(this.rectangle.posX, this.rectangle.posY, this.rectangle.sizeX, this.rectangle.sizeY, new Vector4f(0.3f, 0.3f, 0.3f, 1.0f));
+        shape = new RectShape(x, y, textureName, new Vector2f[]{new Vector2f(0, 0), new Vector2f(1, 0), new Vector2f(0, 1), new Vector2f(1, 1)});
     }
 
     @Override

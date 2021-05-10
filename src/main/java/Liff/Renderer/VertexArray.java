@@ -28,14 +28,20 @@ public class VertexArray {
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, eboID);
         glBufferData(GL_ELEMENT_ARRAY_BUFFER, ibo, GL_STATIC_DRAW);
 
-        int positionSize = 3, colorSize = 4;
-        int vertexSizeBytes = (positionSize+colorSize)*Float.BYTES;
+        int positionSize = 3, colorSize = 4, textureCoordinateSize = 2, textureIdSize = 1;
+        int vertexSizeBytes = (positionSize+colorSize+textureCoordinateSize+textureIdSize)*Float.BYTES;
 
         glVertexAttribPointer(0, positionSize, GL_FLOAT, false, vertexSizeBytes, 0);
         glEnableVertexAttribArray(0);
 
         glVertexAttribPointer(1, colorSize, GL_FLOAT, false, vertexSizeBytes, positionSize * Float.BYTES);
         glEnableVertexAttribArray(1);
+
+        glVertexAttribPointer(2, textureCoordinateSize, GL_FLOAT, false, vertexSizeBytes, (positionSize+colorSize) * Float.BYTES);
+        glEnableVertexAttribArray(2);
+
+        glVertexAttribPointer(3, textureIdSize, GL_FLOAT, false, vertexSizeBytes, (positionSize+colorSize+textureCoordinateSize) * Float.BYTES);
+        glEnableVertexAttribArray(3);
 
         glBindVertexArray(0);
 

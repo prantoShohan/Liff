@@ -14,6 +14,7 @@ public class Renderer {
     private static Renderer instance = null;
     private static Hashtable<String, Shader> shaderLibrary = new Hashtable<>();
     private static Hashtable<String, Camera> cameraLibrary = new Hashtable<>();
+    private static Hashtable<String, Texture> textureLibrary = new Hashtable<>();
 
     private static boolean shouldRedraw = true;
 
@@ -82,6 +83,10 @@ public class Renderer {
         shaderLibrary.get(name).compile();
     }
 
+    private void bindTextureToSlots(){
+
+    }
+
     public static Shader getShader(String name){
         if(shaderLibrary.containsKey(name)){
             return shaderLibrary.get(name);
@@ -102,4 +107,8 @@ public class Renderer {
         return null;
     }
 
+    public static void addTexture(String name, String path) {
+        textureLibrary.put(name, new Texture(path));
+    }
+    public static int getTextureId(String name){return textureLibrary.get(name).getTexID();}
 }
