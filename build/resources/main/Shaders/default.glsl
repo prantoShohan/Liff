@@ -36,5 +36,7 @@ void main(){
     }else{
         int index = int(fTexId);
         color = texture(texture_samplers[index], fTexCoords);
+        //color = fColor;
+
     }
 }

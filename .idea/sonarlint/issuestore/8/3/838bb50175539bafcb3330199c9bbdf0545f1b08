@@ -1,0 +1,22 @@
+
+a
+java:S2184%"FCast one of the operands of this multiplication operation to a "long".(¬ó’Áşÿÿÿÿ
+\
+java:S2184("FCast one of the operands of this multiplication operation to a "long".(¦±º¿
+\
+java:S2184+"FCast one of the operands of this multiplication operation to a "long".(ó—±½
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ä”Æ¿
+F
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+M
+java:S1128"2Remove this unused import 'org.lwjgl.BufferUtils'.(œ¤ÒŠûÿÿÿÿ
+9
+java:S1659"#Declare "vboID" on a separate line.(Îóøî
+9
+java:S1659"#Declare "eboID" on a separate line.(Îóøî
+B
+java:S1659"'Declare "colorSize" on a separate line.(§¸ÌÄùÿÿÿÿ
+N
+java:S1659"3Declare "textureCoordinateSize" on a separate line.(§¸ÌÄùÿÿÿÿ
+F
+java:S1659"+Declare "textureIdSize" on a separate line.(§¸ÌÄùÿÿÿÿ

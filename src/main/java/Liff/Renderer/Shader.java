@@ -84,6 +84,7 @@ public class Shader {
         mat.get(matBuffer);
         glUniformMatrix4fv(location, false, matBuffer);
     }
+
     public void uploadTexture(String name, int slot){
         int location = glGetUniformLocation(shaderID, name);
         glUniform1i(location, slot);

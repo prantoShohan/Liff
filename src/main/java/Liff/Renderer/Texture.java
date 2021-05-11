@@ -12,9 +12,11 @@ import static org.lwjgl.stb.STBImage.stbi_load;
 public class Texture {
     private String filepath;
     private int texID;
+    private String name;
 
-    public Texture(String filepath){
+    public Texture(String filepath, String name){
         this.filepath = filepath;
+        this.name = name;
 
         texID = glGenTextures();
         glBindTexture(GL_TEXTURE_2D, texID);
@@ -47,6 +49,16 @@ public class Texture {
 
     }
 
+    public Texture(ByteBuffer bitmap, int width, int height, String name){
+        this.name = name;
+        texID = glGenTextures();
+        glBindTexture(GL_TEXTURE_2D, texID);
+
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_ALPHA, width, height, 0, GL_ALPHA, GL_UNSIGNED_BYTE, bitmap);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    }
+
     public void bind(){
         glBindTexture(GL_TEXTURE_2D, texID);
 
@@ -54,9 +66,14 @@ public class Texture {
     public void unbind(){
         glBindTexture(GL_TEXTURE_2D, 0);
 
+
     }
 
     public int getTexID() {
         return texID;
+    }
+
+    public String getName(){
+        return this.name;
     }
 }

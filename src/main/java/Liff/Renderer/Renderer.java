@@ -41,6 +41,7 @@ public class Renderer {
         drawDataList.add(new DrawData(shape, shader, camera));
     }
 
+
     public static void processDrawCall(){
 
         if (shouldRedraw) {
@@ -83,10 +84,6 @@ public class Renderer {
         shaderLibrary.get(name).compile();
     }
 
-    private void bindTextureToSlots(){
-
-    }
-
     public static Shader getShader(String name){
         if(shaderLibrary.containsKey(name)){
             return shaderLibrary.get(name);
@@ -108,7 +105,8 @@ public class Renderer {
     }
 
     public static void addTexture(String name, String path) {
-        textureLibrary.put(name, new Texture(path));
+        textureLibrary.put(name, new Texture(path, name));
     }
+    public static void addTexture(Texture texture, String name){textureLibrary.put(name, texture);}
     public static int getTextureId(String name){return textureLibrary.get(name).getTexID();}
 }

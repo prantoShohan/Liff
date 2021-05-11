@@ -4,6 +4,7 @@ import Liff.Renderer.Vertex;
 import Util.Rectangle;
 import org.joml.Vector2f;
 import org.joml.Vector4f;
+import org.lwjgl.stb.STBTTAlignedQuad;
 
 import java.util.Arrays;
 import java.util.List;
@@ -30,7 +31,18 @@ public class RectShape extends Shape{
         this.textureCoordinates = textureCoordinates;
 
     }
+
+    public RectShape(STBTTAlignedQuad q, String textureName, int alignY){
+        super(Arrays.asList(
+                            new Vertex(q.x1(), alignY+(alignY - q.y1()), 0.0f, q.s1(), q.t1()),
+                            new Vertex(q.x0(), alignY+(alignY - q.y0()), 0.0f, q.s0(), q.t0()),
+                            new Vertex(q.x1(), alignY+(alignY - q.y0()), 0.0f, q.s1(), q.t0()),
+                            new Vertex(q.x0(), alignY+(alignY - q.y1()), 0.0f, q.s0(), q.t1())),
+                            Arrays.asList(2, 1, 0, 0, 1, 3), textureName);
+    }
+
     public void updateRectangle(Rectangle rect){
+        //TODO uodate for text rendering
         setVertices(Arrays.asList(new Vertex(rect.sizeX, rect.posY,  0.0f, this.textureCoordinates[3].x, this.textureCoordinates[3].y),
                                   new Vertex(rect.posX,  rect.sizeY, 0.0f, this.textureCoordinates[0].x, this.textureCoordinates[0].y),
                                   new Vertex(rect.sizeX, rect.sizeY, 0.0f, this.textureCoordinates[1].x, this.textureCoordinates[1].y),

@@ -1,0 +1,14 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(èê®á
+G
+java:S1128",Remove this unused import 'Liff.Views.View'.(Î†·øùÿÿÿÿ
+—
+java:S1186‚"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÚêÛ`
+l
+java:S1149"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(Ù¯ÜÁ
+7
+java:S1116"Remove this empty statement.(´‘…öüÿÿÿÿ
+M
+java:S11350"2Complete the task associated to this TODO comment.(ÉÃòëıÿÿÿÿ
+M
+java:S1135_"2Complete the task associated to this TODO comment.(à¯ñòøÿÿÿÿ

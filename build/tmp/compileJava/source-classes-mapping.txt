@@ -7,10 +7,8 @@ Liff/Renderer/DrawCall.java
  Liff.Renderer.DrawCall
 Liff/Renderer/Vertex.java
  Liff.Renderer.Vertex
-Liff/Core/Window.java
- Liff.Core.Window
-FontDemo.java
- FontDemo
+Liff/Shapes/RectShape.java
+ Liff.Shapes.RectShape
 qiwi/qConstraint.java
  qiwi.qConstraint
 Liff/Views/ConstraintLayout/Constraints/PositionConstraints/TopOf.java
@@ -21,8 +19,8 @@ Liff/Renderer/DrawData.java
  Liff.Renderer.DrawData
 Liff/Views/ConstraintLayout/Constraints/SizeConstraints/FixedSizeConstraint.java
  Liff.Views.ConstraintLayout.Constraints.SizeConstraints.FixedSizeConstraint
-qiwi/Variable.java
- qiwi.Variable
+Liff/Core/Window.java
+ Liff.Core.Window
 Liff/Renderer/Shader.java
  Liff.Renderer.Shader
 qiwi/Symbol.java
@@ -35,14 +33,12 @@ Liff/Views/ConstraintLayout/ConstraintLayout.java
  Liff.Views.ConstraintLayout.ConstraintLayout$Mode
 Util/Time.java
  Util.Time
-Liff/Core/Application.java
- Liff.Core.Application
+Liff/Views/RectView.java
+ Liff.Views.RectView
 Util/Command.java
  Util.Command
 qiwi/UnknownEditVariableException.java
  qiwi.UnknownEditVariableException
-IOUtil.java
- IOUtil
 Liff/Views/View.java
  Liff.Views.View
 qiwi/UnsatisfiableConstraintException.java
@@ -61,10 +57,10 @@ Liff/Views/ConstraintLayout/Constraints/PositionConstraints/RightOf.java
  Liff.Views.ConstraintLayout.Constraints.PositionConstraints.RightOf
 Liff/Views/Behaviours/Behaviour.java
  Liff.Views.Behaviours.Behaviour
+Liff/Renderer/Text.java
+ Liff.Renderer.Text
 qiwi/Util.java
  qiwi.Util
-Truetype.java
- Truetype
 Liff/Views/ConstraintLayout/Constraints/PositionConstraints/LeftOf.java
  Liff.Views.ConstraintLayout.Constraints.PositionConstraints.LeftOf
 qiwi/Expression.java
@@ -92,10 +88,8 @@ Liff/Renderer/Texture.java
  Liff.Renderer.Texture
 qiwi/NonlinearExpressionException.java
  qiwi.NonlinearExpressionException
-TruetypeOversample.java
- TruetypeOversample
-qiwi/DuplicateEditVariableException.java
- qiwi.DuplicateEditVariableException
+Liff/Core/Application.java
+ Liff.Core.Application
 Liff/Renderer/Renderer.java
  Liff.Renderer.Renderer
 qiwi/Term.java
@@ -106,8 +100,10 @@ Liff/Shapes/Shape.java
  Liff.Shapes.Shape
 qiwi/RelationalOperator.java
  qiwi.RelationalOperator
-EasyFont.java
- EasyFont
+Util/IOUtil.java
+ Util.IOUtil
+Liff/Renderer/Font.java
+ Liff.Renderer.Font
 Liff/Views/Behaviours/OnClickBehaviour.java
  Liff.Views.Behaviours.OnClickBehaviour
 Liff/Views/UiView.java
@@ -116,8 +112,6 @@ qiwi/Symbolics.java
  qiwi.Symbolics
 Liff/Renderer/Camera.java
  Liff.Renderer.Camera
-MyTruetypeOversampled.java
- MyTruetypeOversampled
 Liff/Views/ConstraintLayout/ConstraintWidget.java
  Liff.Views.ConstraintLayout.ConstraintWidget
  Liff.Views.ConstraintLayout.ConstraintWidget$HorizontalBehaviour
@@ -128,7 +122,7 @@ Liff/Core/Renderable.java
  Liff.Core.Renderable
 Liff/Renderer/VertexArray.java
  Liff.Renderer.VertexArray
-Liff/Shapes/RectShape.java
- Liff.Shapes.RectShape
-Liff/Views/RectView.java
- Liff.Views.RectView
+qiwi/Variable.java
+ qiwi.Variable
+qiwi/DuplicateEditVariableException.java
+ qiwi.DuplicateEditVariableException
